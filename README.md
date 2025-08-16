@@ -1,4 +1,4 @@
-# 🧠 Machine Learning Portfolio – MyProject
+# Machine Learning Portfolio – MyProject
 
 مجموعه‌ای از پروژه‌های یادگیری ماشین با تمرکز بر تحلیل داده، مدل‌سازی، خوشه‌بندی، طبقه‌بندی متون و دیپلوی مدل‌ها. هر پروژه با استفاده از ابزارها و تکنیک‌های مدرن مانند Scikit-learn، FastAPI، Flask، Plotly و Docker پیاده‌سازی شده است.
 

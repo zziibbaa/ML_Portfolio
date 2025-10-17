@@ -1,6 +1,6 @@
 # 🏢 NorthWind SQL Project
 
-این پروژه شامل تمرین‌ها و کوئری‌های SQL بر اساس دیتابیس **Northwind** است. هدف، تمرین مفاهیم **SQL پایه و پیشرفته** و تحلیل داده‌ها با استفاده از جداول واقعی کسب‌وکار می‌باشد.
+این پروژه شامل **۳۰ تمرین SQL** بر اساس دیتابیس **Northwind** است و هدف آن تمرین مفاهیم **SQL پایه و پیشرفته** و تحلیل داده‌ها با استفاده از جداول واقعی کسب‌وکار می‌باشد.
 
 ---
 
@@ -15,63 +15,40 @@ SQL_Project/
 
 ---
 
-## 🧩 تمرین‌های انجام شده
+## 🧩 تمرین‌ها و اهداف آن‌ها
 
-### 1️⃣ میانگین تعداد محصولات در هر سفارش
-- استفاده از `SUM(Quantity)` و `AVG()`  
-- نمایش میانگین واقعی محصولات سفارش داده شده  
-
-```sql
-SELECT AVG(TotalProducts) AS AvgProductsPerOrder
-FROM (
-    SELECT OrderID, SUM(Quantity) AS TotalProducts
-    FROM [Order Details]
-    GROUP BY OrderID
-) AS OrderProductTotals;
-```
-
-### 2️⃣ محصولات بالاتر از میانگین قیمت
-- استفاده از زیرکوئری برای مقایسه با میانگین کل محصولات  
-- تمرین فیلتر داده‌ها با `WHERE` و `AVG()`  
-
-```sql
-SELECT ProductName, UnitPrice
-FROM Products
-WHERE UnitPrice > (SELECT AVG(UnitPrice) FROM Products);
-```
-
-### 3️⃣ درآمد کل هر دسته محصول
-- استفاده از `JOIN` بین `Categories`, `Products` و `[Order Details]`  
-- لحاظ کردن `Discount` در محاسبه درآمد  
-
-```sql
-SELECT c.CategoryName, 
-       SUM(od.Quantity * od.UnitPrice * (1 - od.Discount)) AS revenueCategory
-FROM Categories AS c
-JOIN Products AS p ON p.CategoryID = c.CategoryID
-JOIN [Order Details] AS od ON od.ProductID = p.ProductID
-GROUP BY c.CategoryName
-ORDER BY revenueCategory DESC;
-```
-
-### 4️⃣ کشورهایی بدون سفارش
-- استفاده از `NOT EXISTS` یا `LEFT JOIN … IS NULL`  
-- تمرین ارتباط بین جداول و شرط‌های فیلتر  
-
-```sql
-SELECT DISTINCT c.Country
-FROM Customers AS c
-WHERE NOT EXISTS (
-    SELECT 1
-    FROM Orders AS o
-    WHERE o.CustomerID = c.CustomerID
-);
-```
-
-### 5️⃣ تمرین‌های دیگر
-- انواع `JOIN`ها (INNER, LEFT, RIGHT)  
-- GROUP BY و HAVING  
-- توابع تحلیلی (`COUNT() OVER`, `SUM()`)  
+| شماره | تمرین | هدف |
+|-------|-------|-----|
+| 1 | Display all columns from Customers | نمایش تمام ستون‌ها |
+| 2 | Show CompanyName and Country of customers | نمایش نام شرکت و کشور |
+| 3 | List orders with customer name | ارتباط Orders و Customers |
+| 4 | Display employees info | اطلاعات کامل پرسنل |
+| 5 | Count total orders | محاسبه تعداد کل سفارش‌ها |
+| 6 | Count orders per customer | تعداد سفارش هر مشتری |
+| 7 | Products with stock < 10 | نمایش محصولات کم موجودی |
+| 8 | Customers from Germany | فیلتر مشتریان بر اساس کشور |
+| 9 | Orders handled by "Davolio" | فیلتر سفارشات توسط کارمند مشخص |
+| 10 | Customers with no orders | نمایش مشتریان بدون سفارش |
+| 11 | Number of products per category | شمارش محصولات هر دسته |
+| 12 | Most expensive product per category | محصول گران هر دسته |
+| 13 | Average unit price per category | میانگین قیمت محصولات |
+| 14 | Employees with >100 orders | پرسنل با سفارشات زیاد |
+| 15 | Products never ordered | نمایش محصولات بدون سفارش |
+| 16 | Customers with >5 orders | مشتریان فعال |
+| 17 | Average order amount per customer | میانگین مبلغ سفارش |
+| 18 | Top 5 best-selling products | ۵ محصول پرفروش |
+| 19 | Countries with highest customer count | کشورها با بیشترین مشتری |
+| 20 | Orders with >10 items | سفارشات با بیش از ۱۰ کالا |
+| 21 | Earliest and latest order dates | قدیمی‌ترین و جدیدترین سفارش |
+| 22 | Products with supplier names | ارتباط Products و Suppliers |
+| 23 | Orders with customer and employee name | نمایش سفارش با نام مشتری و پرسنل |
+| 24 | Count orders per month (1997) | تعداد سفارشات ماهانه |
+| 25 | Total sales per customer | مجموع فروش مشتری |
+| 26 | Employees handling US orders | پرسنل پردازش سفارشات آمریکا |
+| 27 | Average number of products per order | میانگین تعداد محصولات هر سفارش |
+| 28 | Products above average price | محصولات با قیمت بالاتر از میانگین |
+| 29 | Total revenue per category | درآمد هر دسته محصول |
+| 30 | Countries with no recorded orders | کشورهایی بدون سفارش |
 
 ---
 

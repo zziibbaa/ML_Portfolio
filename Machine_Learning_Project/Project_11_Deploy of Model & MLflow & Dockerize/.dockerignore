@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+
+
+*.git
+*.ipynb
+*.md
+
+handsome_mlflow/
+.ipynb_checkpoints/
+
+flaask.py

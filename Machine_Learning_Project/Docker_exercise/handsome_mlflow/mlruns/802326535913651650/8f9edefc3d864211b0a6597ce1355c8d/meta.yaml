@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Ziba/API/mlruns/802326535913651650/8f9edefc3d864211b0a6597ce1355c8d/artifacts
+end_time: 1753480925342
+entry_point_name: ''
+experiment_id: '802326535913651650'
+lifecycle_stage: active
+run_id: 8f9edefc3d864211b0a6597ce1355c8d
+run_name: big-fowl-723
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753480925318
+status: 4
+tags: []
+user_id: Ziba

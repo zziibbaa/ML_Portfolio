@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/Ziba/API/mlruns/802326535913651650
+creation_time: 1753478958877
+experiment_id: '802326535913651650'
+last_update_time: 1753478958877
+lifecycle_stage: active
+name: produce_metric

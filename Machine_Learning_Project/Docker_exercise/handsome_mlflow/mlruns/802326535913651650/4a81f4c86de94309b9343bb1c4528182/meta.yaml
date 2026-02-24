@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Ziba/API/mlruns/802326535913651650/4a81f4c86de94309b9343bb1c4528182/artifacts
+end_time: 1753478960465
+entry_point_name: ''
+experiment_id: '802326535913651650'
+lifecycle_stage: active
+run_id: 4a81f4c86de94309b9343bb1c4528182
+run_name: learned-donkey-574
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753478959421
+status: 3
+tags: []
+user_id: Ziba

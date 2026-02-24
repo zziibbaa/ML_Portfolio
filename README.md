@@ -1,6 +1,7 @@
-# Machine Learning Portfolio – MyProject
+# Machine Learning & SQL Portfolio – MyProject
 
-مجموعه‌ای از پروژه‌های یادگیری ماشین با تمرکز بر تحلیل داده، مدل‌سازی، خوشه‌بندی، طبقه‌بندی متون و دیپلوی مدل‌ها. هر پروژه با استفاده از ابزارها و تکنیک‌های مدرن مانند Scikit-learn، FastAPI، Flask، Plotly و Docker پیاده‌سازی شده است.
+مجموعه‌ای از پروژه‌های یادگیری ماشین و SQL با تمرکز بر تحلیل داده، مدل‌سازی، خوشه‌بندی، طبقه‌بندی متون و دیپلوی مدل‌ها.  
+هر پروژه با ابزارهای مدرن مانند Scikit-learn، FastAPI، Flask، Plotly، Docker و SQL پیاده‌سازی شده است.
 
 ---
 
@@ -11,6 +12,7 @@
 - [💬 طبقه‌بندی متون (NLP)](#-طبقه‌بندی-متون-nlp)
 - [🌀 خوشه‌بندی داده‌ها](#-خوشه‌بندی-داده‌ها)
 - [🚀 دیپلوی مدل‌ها (API)](#-دیپلوی-مدل‌ها-api)
+- [🏢 پروژه SQL – Northwind](#-پروژه-sql--northwind)
 - [⚙️ تکنولوژی‌های استفاده شده](#️-تکنولوژی‌های-استفاده-شده)
 - [📄 مجوز](#-مجوز)
 - [🙋‍♀️ درباره من](#-درباره-من)
@@ -59,29 +61,61 @@
 
 ## 🚀 دیپلوی مدل‌ها (API)
 
-در این بخش، یک مدل یادگیری ماشین آموزش‌دیده با استفاده از Flask و FastAPI به‌صورت REST API پیاده‌سازی شده است.
-
 📁 مسیر پروژه: `MyProject/05_Deployment/`
+
+### Flowchart – Deployment Pipeline
+
+```mermaid
+flowchart TD
+    A[Training Script] --> B[MLflow Tracking]
+    B --> C[Saved Model (.pkl)]
+    C --> D[FastAPI Prediction API]
+    D --> E[Docker Container]
+    E --> F[Client Requests / Swagger UI]
+```
 
 ### ویژگی‌ها:
 
 - RESTful API با FastAPI و Flask  
-- مستندسازی خودکار با Swagger (برای FastAPI)  
+- مستندسازی خودکار با Swagger (FastAPI)  
 - پیش‌پردازش داده و پیش‌بینی با Pipeline  
 - تست‌پذیر با pytest  
-- قابلیت اجرای سریع با Docker
+- اجرای سریع با Docker
 
-### اجرای FastAPI:
-```bash
-uvicorn api.fast:app --reload
-# دسترسی به مستندات در:
-http://127.0.0.1:8000/docs
+---
+
+## 🏢 پروژه SQL – Northwind
+
+این پروژه شامل **۳۰ تمرین SQL** بر اساس دیتابیس **Northwind** است و هدف آن تمرین مفاهیم SQL پایه و پیشرفته و تحلیل داده‌ها با استفاده از جداول واقعی کسب‌وکار می‌باشد.
+
+### Flowchart – SQL Project
+
+```mermaid
+flowchart LR
+    A[Northwind DB] --> B[Exercise.sql Queries]
+    B --> C[Data Analysis / Results]
 ```
 
-### اجرای Flask:
+### 🗂️ ساختار پروژه
+```
+SQL_Project/
+├── NorthWind_Project/
+│   ├── Exercise.sql
+│   └── README.md
+└── Northwind/
+```
+
+### تمرین‌ها و اهداف آن‌ها
+- نمایش اطلاعات مشتریان و سفارش‌ها  
+- محاسبات آماری و تجمیعی (sum, avg, count)  
+- فیلتر بر اساس شرط‌ها و گروه‌بندی داده‌ها  
+- ارتباط جداول با JOIN  
+- تحلیل محصولات و فروش  
+
+### نحوه اجرای پروژه
 ```bash
-flask --app api.flask_app run
-http://127.0.0.1:5000/
+git clone --recurse-submodules https://github.com/zziibbaa/SQL_Project.git
+git submodule update --init --recursive
 ```
 
 ---
@@ -90,7 +124,7 @@ http://127.0.0.1:5000/
 
 | دسته‌بندی | ابزار / فریم‌ورک |
 |-----------|-------------------|
-| برنامه‌نویسی | Python |
+| برنامه‌نویسی | Python, SQL |
 | تحلیل داده | Pandas, NumPy |
 | مدل‌سازی | Scikit-learn |
 | مصورسازی | Matplotlib, Seaborn, Plotly |
@@ -110,6 +144,7 @@ http://127.0.0.1:5000/
 
 ## 🙋‍♀️ درباره من
 
-من فارغ‌التحصیل **بیوتکنولوژی** با علاقه‌ و تخصص در **یادگیری ماشین، تحلیل داده‌ها و توسعه APIهای هوشمند** هستم. برای همکاری، بازخورد یا پیشنهاد شغلی، خوشحال می‌شم از طریق گیت‌هاب در تماس باشید:
+من فارغ‌التحصیل **بیوتکنولوژی** با علاقه و تخصص در **یادگیری ماشین، تحلیل داده‌ها و توسعه APIهای هوشمند** هستم.  
+برای همکاری، بازخورد یا پیشنهاد شغلی، خوشحال می‌شوم از طریق گیت‌هاب در تماس باشید:
 
 📎 [GitHub Profile](https://github.com/zziibbaa)

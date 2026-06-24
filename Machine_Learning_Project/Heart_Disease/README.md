@@ -305,7 +305,10 @@ As someone with a background in Genetics and Biotechnology transitioning into AI
 
 ## Results
 ### ROC Curve
-![ROC Curve_FFNModel](RocCurveDisplay.png) ![ROC Curve_LogesticModel](RocCurveDisplay_logestic.png)
+<p align="center">
+  <img src="RocCurveDisplay.png" width="400">
+  <img src="RocCurveDisplay_logestic.png" width="400">
+</p>
 
 ### Training Curves
 
@@ -313,5 +316,5 @@ As someone with a background in Genetics and Biotechnology transitioning into AI
 
 ### Classification Metrics
 
-![Classification Metrics](classification_metrics.png)
+<img src="classification_metrics.png" width="500">
 

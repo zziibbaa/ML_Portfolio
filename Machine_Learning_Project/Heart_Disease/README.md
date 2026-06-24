@@ -1,170 +1,73 @@
 # ❤️ Heart Disease Prediction
 
-A Machine Learning and Deep Learning project for predicting heart disease using the UCI Heart Disease dataset.
+A Machine Learning project for predicting the presence of heart disease using clinical patient data. This project compares the performance of a traditional Machine Learning model (**Logistic Regression**) with a Deep Learning model (**Feed Forward Neural Network - FFN**).
 
 ---
 
 ## 📌 Project Overview
 
-The goal of this project is to predict whether a patient has heart disease based on clinical features.
+The goal of this project is to build and evaluate classification models that can predict whether a patient has heart disease based on medical attributes such as age, cholesterol level, chest pain type, and other clinical measurements.
 
-Two different approaches were implemented and compared:
+Two models were implemented and compared:
 
-1. Logistic Regression
-2. Feed Forward Neural Network (FFN) using PyTorch
-
-The project includes:
-
-- Data preprocessing
-- Feature scaling
-- One-Hot Encoding
-- Model training
-- Threshold optimization using Validation F1-score
-- Performance evaluation
-- ROC Curve
-- Confusion Matrix
-- Classification Report
+- Logistic Regression
+- Feed Forward Neural Network (PyTorch)
 
 ---
 
 ## 📊 Dataset
 
-**Heart Disease Dataset**
+**Heart Disease Dataset (Cleveland)**
 
-Target variable:
+Features include:
 
-```text
-DISEASE
-```
+- Age
+- Sex
+- Chest Pain Type
+- Resting Blood Pressure
+- Cholesterol
+- Fasting Blood Sugar
+- Resting ECG
+- Maximum Heart Rate
+- Exercise Induced Angina
+- ST Depression (Oldpeak)
+- Slope
+- Number of Major Vessels (ca)
+- Thalassemia (thal)
 
-Converted into a binary classification problem:
+Target:
 
-```python
-data["DISEASE"] = (data["DISEASE"] > 0).astype(int)
-```
-
-| Value | Meaning |
-|---------|---------|
-| 0 | No Heart Disease |
-| 1 | Heart Disease |
+- `0` → No Heart Disease
+- `1` → Heart Disease
 
 ---
 
 ## ⚙️ Data Preprocessing
 
-### Numerical Features
-
-```text
-age
-trestbps
-chol
-thalach
-oldpeak
-```
-
-Scaled using:
-
-```python
-StandardScaler()
-```
-
-### Categorical Features
-
-```text
-sex
-cp
-fbs
-restecg
-exang
-slope
-thal
-ca
-```
-
-Encoded using:
-
-```python
-OneHotEncoder(drop='first')
-```
+- Train / Validation / Test split
+- Stratified sampling
+- Standardization of numerical features
+- One-Hot Encoding of categorical features
+- Threshold optimization based on Validation F1-Score
 
 ---
 
-## 🔀 Train / Validation / Test Split
+## 🤖 Models
 
-```text
-Train      : 80%
-Validation : 10%
-Test       : 10%
-```
+### Logistic Regression
 
-Stratified sampling was used to preserve class distribution.
+- LogisticRegressionCV
+- Cross-validation for hyperparameter selection
+- Threshold tuning using Validation F1-score
 
----
+### Feed Forward Neural Network (FFN)
 
-# 🤖 Model 1: Logistic Regression
-
-Implemented using:
-
-```python
-LogisticRegressionCV()
-```
-
-### Hyperparameter Selection
-
-Cross-validation:
-
-```python
-cv=10
-```
-
-### Threshold Optimization
-
-Instead of using the default threshold:
-
-```text
-0.50
-```
-
-The optimal threshold was selected on the validation set by maximizing the F1-score.
-
----
-
-## 📈 Logistic Regression Results
-
-### Best Threshold
-
-```text
-0.467
-```
-
-### Test Results
-
-| Metric | Score |
-|----------|----------|
-| Accuracy | 0.94 |
-| Precision | 0.93 |
-| Recall | 0.93 |
-| F1-score | 0.93 |
-
-### Classification Report
-
-```text
-              precision    recall  f1-score
-
-Class 0         0.94       0.94      0.94
-Class 1         0.93       0.93      0.93
-```
-
----
-
-# 🧠 Model 2: Feed Forward Neural Network (PyTorch)
-
-### Architecture
+Architecture:
 
 ```text
 Input Layer
      ↓
-Linear(input_dim → 32)
+Linear(Features → 32)
      ↓
 LeakyReLU
      ↓
@@ -179,79 +82,54 @@ Dropout(0.3)
 Linear(16 → 2)
 ```
 
-### Loss Function
+Training:
 
-```python
-CrossEntropyLoss()
-```
-
-### Optimizer
-
-```python
-Adam(lr=0.001)
-```
+- Loss Function: CrossEntropyLoss
+- Optimizer: Adam
+- Early model selection based on Validation Accuracy
 
 ---
 
-## 📈 FFN Results
+## 📈 Results
 
-### Test Results
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|---------|---------|---------|---------|---------|---------|
+| Logistic Regression | 0.94 | 0.93 | 0.93 | 0.93 | 0.98 |
+| FFN | 0.90 | 0.91 | 0.91 | 0.90 | 1.00 |
 
-| Metric | Score |
-|----------|----------|
-| Accuracy | 0.90 |
-| Precision | 0.82 |
-| Recall | 1.00 |
-| F1-score | 0.90 |
+### Key Observation
 
-### Classification Report
-
-```text
-              precision    recall  f1-score
-
-Class 0         1.00       0.82      0.90
-Class 1         0.82       1.00      0.90
-```
+- Logistic Regression achieved the highest F1-score and overall classification performance.
+- FFN achieved a perfect ROC-AUC score on the test split but slightly lower F1-score.
+- For this dataset size, Logistic Regression performed competitively against the neural network while requiring significantly less complexity.
 
 ---
 
-# 📊 Model Comparison
+## 📉 ROC Curve Comparison
 
-| Metric | Logistic Regression | FFN |
-|----------|----------|----------|
-| Accuracy | **0.94** | 0.90 |
-| Precision | **0.93** | 0.82 |
-| Recall | 0.93 | **1.00** |
-| F1-score | **0.93** | 0.90 |
+<table>
+<tr>
+<th align="center">Logistic Regression</th>
+<th align="center">Feed Forward Neural Network (FFN)</th>
+</tr>
 
----
+<tr>
+<td align="center">
+<img src="RocCurveDisplay_logestic.png" width="450">
+</td>
 
-## 📝 Conclusion
-
-For this dataset, **Logistic Regression outperformed the Feed Forward Neural Network**.
-
-Possible reasons:
-
-- Small dataset size
-- Limited feature complexity
-- Linear decision boundary is sufficient
-
-This project demonstrates that simpler machine learning models can outperform deep learning models on structured tabular datasets.
+<td align="center">
+<img src="RocCurveDisplay.png" width="450">
+</td>
+</tr>
+</table>
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
 Heart_Disease/
-│
-├── data_loader.py
-├── preprocessing.py
-│
-├── Logistic_Regression/
-│   ├── training.py
-│   ├── evaluation.py
-│   └── main_logistic.py
 │
 ├── FFN_Model/
 │   ├── build_model.py
@@ -259,11 +137,38 @@ Heart_Disease/
 │   ├── evaluation.py
 │   └── main.py
 │
-├── best_model.pth
-├── loss_accuracy.png
-├── classification_metrics.png
+├── Logestic_Regression/
+│   ├── preprocessing.py
+│   ├── training_logestic.py
+│   ├── evaluation_logestic.py
+│   └── main_logestic.py
 │
+├── Heart Disease Dataset_EDA.ipynb
+├── processed.cleveland.data
+├── requirements.txt
 └── README.md
+```
+
+---
+
+## 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/zziibbaa/ML_Portfolio.git
+```
+
+Move to the project directory:
+
+```bash
+cd ML_Portfolio/Machine_Learning_Project/Heart_Disease
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
 ```
 
 ---
@@ -271,22 +176,11 @@ Heart_Disease/
 ## 🛠 Technologies Used
 
 - Python
-- NumPy
 - Pandas
+- NumPy
 - Matplotlib
 - Scikit-Learn
 - PyTorch
-
----
-
-## 🎯 Key Learning Outcomes
-
-- Building end-to-end Machine Learning pipelines
-- Handling healthcare tabular datasets
-- Threshold optimization using F1-score
-- Comparing classical ML and Deep Learning models
-- Evaluating classification models with multiple metrics
-- Implementing Feed Forward Neural Networks in PyTorch
 
 ---
 
@@ -294,42 +188,11 @@ Heart_Disease/
 
 **Ziba**
 
-Machine Learning & AI Portfolio Project
+- MSc in Biotechnology
+- Machine Learning & Deep Learning Enthusiast
+- Interested in AI applications in healthcare
+
+GitHub:
+https://github.com/zziibbaa
 
 ---
-
-### Personal Note
-
-As someone with a background in Genetics and Biotechnology transitioning into AI and Data Science, I built this project to strengthen my understanding of classification workflows, model evaluation, and the practical trade-offs between traditional machine learning and deep learning approaches on real-world healthcare datasets.
-
-
-## Results
-
-<h3 align="center">ROC Curve Comparison</h3>
-
-<table>
-<tr>
-
-<td align="center">
-<div align="center"><b>Logistic Regression</b></div>
-<img src="RocCurveDisplay_logestic.png" width="450">
-</td>
-
-<td align="center">
-<div align="center"><b>Feed Forward Neural Network (FFN)</b></div>
-<img src="RocCurveDisplay.png" width="450">
-</td>
-
-</tr>
-</table>
-
-
-
-### Training Curves
-
-![Training Curves](loss_accuracy.png)
-
-### Classification Metrics
-
-<img src="classification_metrics.png" width="500">
-

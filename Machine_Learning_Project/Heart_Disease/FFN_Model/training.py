@@ -4,20 +4,19 @@ import copy
 from build_model import build_model
 from preprocessing import preprocess_data
 
-train_loader , test_loader , preprocesser=preprocess_data()
 
-def training(train_loader , test_loader , epochs=80):
+
+train_loader, val_loader , test_loader , preprocesser=preprocess_data()
+
+
+def training(train_loader , val_loader , epochs=50):
     train_acc=[]
-    test_acc=[]
+    val_acc=[]
     losses=torch.zeros(epochs)
     best_model={'accuracy' : 0,
                 'epoch':0 ,
                 'model': None}
-    sample_x, _ = next(iter(train_loader))
-
-    input_dim = sample_x.shape[1]
-
-    model, loss_fun, optimizer = build_model(input_dim)
+    model , loss_fun , optimizer=build_model()
 
     for epoch_i in range(epochs):
         model.train()
@@ -41,13 +40,17 @@ def training(train_loader , test_loader , epochs=80):
 
         model.eval()
         with torch.no_grad():
-            x,y=next(iter(test_loader))
-            y_pred=model(x)
-            test_acc.append(100*torch.mean((torch.argmax(y_pred , dim=1)==y).float()).item())
+            val_batch_acc=[]
+            for x,y in val_loader:
+                y_pred=model(x)
+                val_batch_acc.append(100*torch.mean((torch.argmax(y_pred , dim=1)==y).float()).item())
 
-            if test_acc[-1]>best_model['accuracy']:
-                best_model['accuracy']=test_acc[-1]
+            val_acc.append(np.mean(val_batch_acc))
+
+            if val_acc[-1]>best_model['accuracy']:
+                best_model['accuracy']=val_acc[-1]
                 best_model['epoch']=epoch_i+1
                 best_model['model']=copy.deepcopy(model.state_dict())
-    model.load_state_dict(best_model['model'])
-    return train_acc , test_acc , losses , model , best_model
+    if best_model['model'] is not None:
+        model.load_state_dict(best_model['model'])
+    return train_acc , val_acc , losses , model , best_model

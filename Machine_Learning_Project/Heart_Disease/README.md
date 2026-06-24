@@ -305,16 +305,23 @@ As someone with a background in Genetics and Biotechnology transitioning into AI
 
 ## Results
 
-<h3>ROC Curve Comparison</h3>
-<p align="center">
-  <b>Logistic Regression</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Feed Forward Neural Network (FFN)</b>
-</p>
+<h3 align="center">ROC Curve Comparison</h3>
 
-<p align="center">
-  <img src="RocCurveDisplay_logestic.png" width="45%">
-  <img src="RocCurveDisplay.png" width="45%">
-</p>
+<table>
+<tr>
+
+<td align="center">
+<div align="center"><b>Logistic Regression</b></div>
+<img src="RocCurveDisplay_logestic.png" width="450">
+</td>
+
+<td align="center">
+<div align="center"><b>Feed Forward Neural Network (FFN)</b></div>
+<img src="RocCurveDisplay.png" width="450">
+</td>
+
+</tr>
+</table>
 
 
 

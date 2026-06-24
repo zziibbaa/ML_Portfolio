@@ -305,10 +305,17 @@ As someone with a background in Genetics and Biotechnology transitioning into AI
 
 ## Results
 ### ROC Curve
-<p align="center">
-  <img src="RocCurveDisplay.png" width="400">
-  <img src="RocCurveDisplay_logestic.png" width="400">
-</p>
+### Logistic Regression ROC Curve
+
+<img src="RocCurveDisplay_logestic.png" width="500">
+
+The ROC curve of the Logistic Regression model.
+
+### FFN ROC Curve
+
+<img src="RocCurveDisplay.png" width="500">
+
+The ROC curve of the Feed Forward Neural Network (FFN) model.
 
 ### Training Curves
 

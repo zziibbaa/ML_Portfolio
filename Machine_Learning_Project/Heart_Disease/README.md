@@ -10,8 +10,8 @@ The goal of this project is to build and evaluate classification models that can
 
 Two models were implemented and compared:
 
-- Logistic Regression
 - Feed Forward Neural Network (PyTorch)
+- Logistic Regression
 
 ---
 
@@ -54,11 +54,6 @@ Target:
 
 ## 🤖 Models
 
-### Logistic Regression
-
-- LogisticRegressionCV
-- Cross-validation for hyperparameter selection
-- Threshold tuning using Validation F1-score
 
 ### Feed Forward Neural Network (FFN)
 
@@ -90,17 +85,72 @@ Training:
 
 ---
 
+### Logistic Regression
+
+- LogisticRegressionCV
+- Cross-validation for hyperparameter selection
+- Threshold tuning using Validation F1-score
+
+
 ## 📈 Results
 
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
 |---------|---------|---------|---------|---------|---------|
-| Logistic Regression | 0.94 | 0.93 | 0.93 | 0.93 | 0.98 |
 | FFN | 0.90 | 0.91 | 0.91 | 0.90 | 1.00 |
+| Logistic Regression | 0.94 | 0.93 | 0.93 | 0.93 | 0.98 |
+
+
+
+# 🚀 REST API
+
+The PyTorch model is deployed using **FastAPI**.
+
+Available endpoints:
+
+| Endpoint | Description |
+|----------|-------------|
+| `/health` | Health check |
+| `/predict` | Predict heart disease |
+
+Example Response
+
+```json
+{
+    "prediction": 1,
+    "probability": 0.759,
+    "threshold": 0.432,
+    "result": "Heart Disease"
+}
+```
+
+---
+
+# 🐳 Docker
+
+Build Docker image
+
+```bash
+docker build -t heart-disease-api .
+```
+
+Run container
+
+```bash
+docker run -p 8000:8000 heart-disease-api
+```
+
+Swagger UI
+
+```
+http://localhost:8000/docs
+```
+
+---
 
 ### Key Observation
 
-- Logistic Regression achieved the highest F1-score and overall classification performance.
 - FFN achieved a perfect ROC-AUC score on the test split but slightly lower F1-score.
+- Logistic Regression achieved the highest F1-score and overall classification performance.
 - For this dataset size, Logistic Regression performed competitively against the neural network while requiring significantly less complexity.
 
 ---
@@ -128,25 +178,46 @@ Training:
 
 ## 📂 Project Structure
 
+
 ```text
 Heart_Disease/
 │
-├── FFN_Model/
-│   ├── build_model.py
-│   ├── training.py
-│   ├── evaluation.py
-│   └── main.py
+├── data/
+│   └── processed.cleveland.data
 │
-├── Logestic_Regression/
+├── images/
+│   ├── classification_metrics_FFN.png
+│   ├── loss_accuracy_FFN.png
+│   ├── RocCurveDisplay_FFN.png
+│   └── RocCurveDisplay_logistic.png
+│
+├── notebooks/
+│   ├── Heart Disease Dataset__EDA.ipynb
+│   └── Display Result of Logistic Regression.ipynb
+│
+├── Logistic_Regression/
+│   ├── data_loader.py
 │   ├── preprocessing.py
-│   ├── training_logestic.py
-│   ├── evaluation_logestic.py
-│   └── main_logestic.py
+│   ├── training_logistic.py
+│   ├── evaluation_logistic.py
+│   ├── main_logistic.py
+│   ├── best_logistic_model.pkl
+│   ├── preprocessor.pkl
+│   └── requirements.txt
 │
-├── Heart Disease Dataset_EDA.ipynb
-├── processed.cleveland.data
-├── requirements.txt
-└── README.md
+└── FFN_Model/
+    ├── api.py
+    ├── build_model.py
+    ├── preprocessing.py
+    ├── training.py
+    ├── evaluation.py
+    ├── main.py
+    ├── best_model.pt
+    ├── preprocessor.pkl
+    ├── threshold.pkl
+    ├── Dockerfile
+    ├── requirements.txt
+    └── data_loader.py
 ```
 
 ---
@@ -181,6 +252,9 @@ pip install -r requirements.txt
 - Matplotlib
 - Scikit-Learn
 - PyTorch
+- FastAPI
+- Docker
+- Joblib
 
 ---
 

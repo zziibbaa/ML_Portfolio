@@ -6,7 +6,7 @@ A Machine Learning project for predicting the presence of heart disease using cl
 
 ## 📌 Project Overview
 
-The goal of this project is to build and evaluate classification models that can predict whether a patient has heart disease based on medical attributes such as age, cholesterol level, chest pain type, and other clinical measurements.
+This project demonstrates an end-to-end machine learning workflow, including exploratory data analysis (EDA), data preprocessing, model training, evaluation, REST API deployment using FastAPI, and Docker containerization.
 
 Two models were implemented and compared:
 
@@ -14,6 +14,42 @@ Two models were implemented and compared:
 - Logistic Regression
 
 ---
+
+## 🔄 Machine Learning Pipeline
+
+```text
+Raw Data
+    │
+    ▼
+EDA
+    │
+    ▼
+Preprocessing
+(StandardScaler + OneHotEncoder)
+    │
+    ▼
+Train / Validation / Test Split
+    │
+    │
+    │─────────────► MLflow Tracking
+    │
+    │
+    ▼
+Model Training
+(Logistic Regression / FFN)
+    │
+    ▼
+Evaluation
+    │
+    ▼
+Best Model
+    │
+    ▼
+FastAPI
+    │
+    ▼
+Docker
+```
 
 ## 📊 Dataset
 
@@ -94,7 +130,7 @@ Training:
 
 ## 📈 Results
 
-| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+| Model | TEST-Accuracy | Precision | Recall | F1-Score | ROC-AUC |
 |---------|---------|---------|---------|---------|---------|
 | FFN | 0.90 | 0.91 | 0.91 | 0.90 | 1.00 |
 | Logistic Regression | 0.94 | 0.93 | 0.93 | 0.93 | 0.98 |
@@ -239,7 +275,7 @@ cd ML_Portfolio/Machine_Learning_Project/Heart_Disease
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install -r FFN_Model/requirements.txt
 ```
 
 ---
@@ -262,9 +298,14 @@ pip install -r requirements.txt
 
 **Ziba**
 
-- MSc in Biotechnology
-- Machine Learning & Deep Learning Enthusiast
-- Interested in AI applications in healthcare
+MSc in Biotechnology transitioning into Machine Learning and AI Engineering.
+
+Interested in:
+
+- Machine Learning
+- Deep Learning
+- MLOps
+- AI for Healthcare
 
 GitHub:
 https://github.com/zziibbaa

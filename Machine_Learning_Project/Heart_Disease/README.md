@@ -158,7 +158,25 @@ Example Response
     "result": "Heart Disease"
 }
 ```
+Example Request
 
+```json
+{
+  "age": 63,
+  "sex": 1,
+  "cp": 1,
+  "trestbps": 145,
+  "chol": 233,
+  "fbs": 1,
+  "restecg": 2,
+  "thalach": 150,
+  "exang": 0,
+  "oldpeak": 2.3,
+  "slope": 3,
+  "thal": 6,
+  "ca": 0
+}
+```
 ---
 
 # 🐳 Docker

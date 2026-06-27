@@ -30,13 +30,13 @@ Preprocessing
     ▼
 Train / Validation / Test Split
     │
-    │
-    │─────────────► MLflow Tracking
-    │
-    │
     ▼
 Model Training
 (Logistic Regression / FFN)
+    │
+    │
+    │─────────────► MLflow Tracking
+    │
     │
     ▼
 Evaluation

@@ -168,17 +168,27 @@ Training
 
 ---
 
-# 📊 Experiment Tracking
+## 📊 Experiment Tracking
+
+Model experiments were tracked using **MLflow**.
+
+Logged information includes:
+
+- Hyperparameters
+- Validation metrics
+- Test metrics
+- Best threshold
+- ROC-AUC
+- Model artifacts
+
+<p align="center">
+<img src="images/mlflow_Logistic.png" width="900">
+</p>
+<p align="center">
+<img src="images/mlflow_FFN.png" width="900">
+</p>
 
 Experiments are tracked using **MLflow**.
-
-Tracked artifacts include:
-
-* Model parameters
-* Evaluation metrics
-* ROC Curve
-* Trained models
-* Threshold values
 
 ---
 

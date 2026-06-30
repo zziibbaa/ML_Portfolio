@@ -1,164 +1,198 @@
 # ❤️ Heart Disease Prediction
 
-A Machine Learning project for predicting the presence of heart disease using clinical patient data. This project compares the performance of a traditional Machine Learning model (**Logistic Regression**) with a Deep Learning model (**Feed Forward Neural Network - FFN**).
+An end-to-end Machine Learning project for predicting heart disease using the Cleveland Heart Disease Dataset.
+
+The project compares a traditional Machine Learning approach (**Logistic Regression**) with a **Feed Forward Neural Network (PyTorch)** and demonstrates a complete deployment workflow including preprocessing pipelines, experiment tracking, REST API development, and Docker containerization.
 
 ---
 
-## 📌 Project Overview
+# 🚀 Project Highlights
 
-This project demonstrates an end-to-end machine learning workflow, including exploratory data analysis (EDA), data preprocessing, model training, evaluation, REST API deployment using FastAPI, and Docker containerization.
-
-Two models were implemented and compared:
-
-- Feed Forward Neural Network (PyTorch)
-- Logistic Regression
+* End-to-end Machine Learning workflow
+* Exploratory Data Analysis (EDA)
+* Scikit-Learn preprocessing pipeline
+* Logistic Regression baseline
+* Feed Forward Neural Network (PyTorch)
+* Validation-based threshold optimization
+* Experiment tracking with MLflow
+* REST API using FastAPI
+* Dockerized deployment
 
 ---
 
-## 🔄 Machine Learning Pipeline
+# 🔄 Project Workflow
 
 ```text
-Raw Data
-    │
-    ▼
-EDA
-    │
-    ▼
-Preprocessing
-(StandardScaler + OneHotEncoder)
-    │
-    ▼
-Train / Validation / Test Split
-    │
-    ▼
-Model Training
-(Logistic Regression / FFN)
-    │
-    │
-    │─────────────► MLflow Tracking
-    │
-    │
-    ▼
-Evaluation
-    │
-    ▼
-Best Model
-    │
-    ▼
-FastAPI
-    │
-    ▼
-Docker
+                Cleveland Dataset
+                       │
+                       ▼
+               Data Cleaning & EDA
+                       │
+                       ▼
+         Train / Validation / Test Split
+                       │
+                       ▼
+          Scikit-Learn Preprocessing Pipeline
+      (StandardScaler + OneHotEncoder)
+                       │
+          ┌────────────┴────────────┐
+          │                         │
+          ▼                         ▼
+ Logistic Regression         Feed Forward Network
+          │                         │
+          └────────────┬────────────┘
+                       ▼
+            Threshold Optimization
+         (Validation F1-Score Search)
+                       │
+                       ▼
+              Model Evaluation
+                       │
+                       ▼
+                MLflow Tracking
+                       │
+                       ▼
+              FastAPI Deployment
+                       │
+                       ▼
+                    Docker
 ```
 
-## 📊 Dataset
+---
 
-**Heart Disease Dataset (Cleveland)**
+# 📊 Dataset
 
-Features include:
+**Cleveland Heart Disease Dataset**
 
-- Age
-- Sex
-- Chest Pain Type
-- Resting Blood Pressure
-- Cholesterol
-- Fasting Blood Sugar
-- Resting ECG
-- Maximum Heart Rate
-- Exercise Induced Angina
-- ST Depression (Oldpeak)
-- Slope
-- Number of Major Vessels (ca)
-- Thalassemia (thal)
+### Features
 
-Target:
+* Age
+* Sex
+* Chest Pain Type
+* Resting Blood Pressure
+* Cholesterol
+* Fasting Blood Sugar
+* Resting ECG
+* Maximum Heart Rate
+* Exercise-Induced Angina
+* Oldpeak
+* Slope
+* Number of Major Vessels (ca)
+* Thalassemia (thal)
 
-- `0` → No Heart Disease
-- `1` → Heart Disease
+### Target
+
+* **0** → No Heart Disease
+* **1** → Heart Disease
 
 ---
 
-## ⚙️ Data Preprocessing
+# ⚙️ Data Preprocessing
 
-- Train / Validation / Test split
-- Stratified sampling
-- Standardization of numerical features
-- One-Hot Encoding of categorical features
-- Threshold optimization based on Validation F1-Score
+The preprocessing pipeline includes:
+
+* Missing value removal
+* Stratified train/validation/test split
+* Standardization of numerical features
+* One-Hot Encoding of categorical variables
+* Threshold optimization based on Validation F1-score
+
+A Scikit-Learn Pipeline is used to guarantee identical preprocessing during both training and inference.
 
 ---
 
-## 🤖 Models
+# 🤖 Models
 
+## Logistic Regression
 
-### Feed Forward Neural Network (FFN)
+* LogisticRegressionCV
+* 10-fold Cross Validation
+* Automatic C selection
+* Validation threshold optimization
 
-Architecture:
+---
+
+## Feed Forward Neural Network (PyTorch)
+
+Architecture
 
 ```text
-Input Layer
-     ↓
-Linear(Features → 32)
-     ↓
+Input
+   │
+Linear → 32
+   │
 LeakyReLU
-     ↓
+   │
 Dropout(0.3)
-     ↓
-Linear(32 → 16)
-     ↓
+   │
+Linear → 16
+   │
 LeakyReLU
-     ↓
+   │
 Dropout(0.3)
-     ↓
-Linear(16 → 2)
+   │
+Linear → 2
 ```
 
-Training:
+Training
 
-- Loss Function: CrossEntropyLoss
-- Optimizer: Adam
-- Early model selection based on Validation Accuracy
+* CrossEntropyLoss
+* Adam Optimizer
+* Best model selected using Validation Accuracy
 
 ---
 
-### Logistic Regression
+# 📈 Model Performance
 
-- LogisticRegressionCV
-- Cross-validation for hyperparameter selection
-- Threshold tuning using Validation F1-score
+| Model                | Accuracy | Precision | Recall | F1-score |  ROC-AUC |
+| -------------------- | -------: | --------: | -----: | -------: | -------: |
+| Logistic Regression  |     0.70 |      0.62 |   0.93 | **0.74** | **0.90** |
+| Feed Forward Network | **0.80** |  **0.83** |   0.71 | **0.77** |     0.89 |
 
+---
 
-## 📈 Results
+# 📌 Key Findings
 
-| Model | TEST-Accuracy | Precision | Recall | F1-Score | ROC-AUC |
-|---------|---------|---------|---------|---------|---------|
-| FFN | 0.90 | 0.91 | 0.91 | 0.90 | 1.00 |
-| Logistic Regression | 0.94 | 0.93 | 0.93 | 0.93 | 0.98 |
+* Logistic Regression achieved the highest Recall for detecting heart disease.
+* The Feed Forward Neural Network achieved the best overall balance between Precision and F1-score.
+* Despite its simplicity, Logistic Regression remains a strong baseline for small structured clinical datasets.
 
+---
 
+# 📉 ROC Curve
+
+|            Logistic Regression           |         Feed Forward Network        |
+| :--------------------------------------: | :---------------------------------: |
+| ![](images/RocCurveDisplay_logistic.png) | ![](images/RocCurveDisplay_FFN.png) |
+
+---
+
+# 📊 Experiment Tracking
+
+Experiments are tracked using **MLflow**.
+
+Tracked artifacts include:
+
+* Model parameters
+* Evaluation metrics
+* ROC Curve
+* Trained models
+* Threshold values
+
+---
 
 # 🚀 REST API
 
-The PyTorch model is deployed using **FastAPI**.
+The trained PyTorch model is deployed using **FastAPI**.
 
-Available endpoints:
+## Available Endpoints
 
-| Endpoint | Description |
-|----------|-------------|
-| `/health` | Health check |
-| `/predict` | Predict heart disease |
+| Endpoint   | Description              |
+| ---------- | ------------------------ |
+| `/health`  | Health check             |
+| `/predict` | Heart disease prediction |
 
-Example Response
-
-```json
-{
-    "prediction": 1,
-    "probability": 0.759,
-    "threshold": 0.432,
-    "result": "Heart Disease"
-}
-```
-Example Request
+### Example Request
 
 ```json
 {
@@ -177,17 +211,29 @@ Example Request
   "ca": 0
 }
 ```
+
+### Example Response
+
+```json
+{
+  "prediction": 1,
+  "probability": 0.759,
+  "threshold": 0.482,
+  "result": "Heart Disease"
+}
+```
+
 ---
 
 # 🐳 Docker
 
-Build Docker image
+Build the Docker image
 
 ```bash
 docker build -t heart-disease-api .
 ```
 
-Run container
+Run the container
 
 ```bash
 docker run -p 8000:8000 heart-disease-api
@@ -195,137 +241,80 @@ docker run -p 8000:8000 heart-disease-api
 
 Swagger UI
 
-```
+```text
 http://localhost:8000/docs
 ```
 
 ---
 
-### Key Observation
-
-- FFN achieved a perfect ROC-AUC score on the test split but slightly lower F1-score.
-- Logistic Regression achieved the highest F1-score and overall classification performance.
-- For this dataset size, Logistic Regression performed competitively against the neural network while requiring significantly less complexity.
-
----
-
-## 📉 ROC Curve Comparison
-
-<table>
-<tr>
-<th align="center">Logistic Regression</th>
-<th align="center">Feed Forward Neural Network (FFN)</th>
-</tr>
-
-<tr>
-<td align="center">
-<img src="RocCurveDisplay_logestic.png" width="450">
-</td>
-
-<td align="center">
-<img src="RocCurveDisplay.png" width="450">
-</td>
-</tr>
-</table>
-
----
-
-## 📂 Project Structure
-
+# 📂 Project Structure
 
 ```text
 Heart_Disease/
 │
 ├── data/
-│   └── processed.cleveland.data
-│
-├── images/
-│   ├── classification_metrics_FFN.png
-│   ├── loss_accuracy_FFN.png
-│   ├── RocCurveDisplay_FFN.png
-│   └── RocCurveDisplay_logistic.png
-│
 ├── notebooks/
-│   ├── Heart Disease Dataset__EDA.ipynb
-│   └── Display Result of Logistic Regression.ipynb
-│
+├── images/
 ├── Logistic_Regression/
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── training_logistic.py
-│   ├── evaluation_logistic.py
-│   ├── main_logistic.py
-│   ├── best_logistic_model.pkl
-│   ├── preprocessor.pkl
-│   └── requirements.txt
-│
-└── FFN_Model/
-    ├── api.py
-    ├── build_model.py
-    ├── preprocessing.py
-    ├── training.py
-    ├── evaluation.py
-    ├── main.py
-    ├── best_model.pt
-    ├── preprocessor.pkl
-    ├── threshold.pkl
-    ├── Dockerfile
-    ├── requirements.txt
-    └── data_loader.py
+├── FFN_Pipeline_v2/
+├── mlruns/
+└── README.md
 ```
 
 ---
 
-## 🚀 Installation
+# 🛠 Technologies
 
-Clone the repository:
+* Python
+* NumPy
+* Pandas
+* Matplotlib
+* Scikit-Learn
+* PyTorch
+* FastAPI
+* MLflow
+* Docker
+* Joblib
+
+---
+
+# 🚀 Installation
 
 ```bash
 git clone https://github.com/zziibbaa/ML_Portfolio.git
-```
 
-Move to the project directory:
-
-```bash
 cd ML_Portfolio/Machine_Learning_Project/Heart_Disease
+
+pip install -r FFN_Pipeline_v2/requirements.txt
 ```
 
-Install dependencies:
+Run the Logistic Regression model
 
 ```bash
-pip install -r FFN_Model/requirements.txt
+python Logistic_Regression/main_logistic.py
+```
+
+Run the Feed Forward Network
+
+```bash
+python FFN_Pipeline_v2/main_skorch.py
 ```
 
 ---
 
-## 🛠 Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-Learn
-- PyTorch
-- FastAPI
-- Docker
-- Joblib
-
----
-
-## 👩‍💻 Author
+# 👩‍💻 Author
 
 **Ziba**
 
-MSc in Biotechnology transitioning into Machine Learning and AI Engineering.
+M.Sc. in Biotechnology transitioning into Machine Learning and AI Engineering.
 
-Interested in:
+### Areas of Interest
 
-- Machine Learning
-- Deep Learning
-- MLOps
-- AI for Healthcare
+* Machine Learning
+* Deep Learning
+* MLOps
+* AI for Healthcare
 
-GitHub:
+GitHub
+
 https://github.com/zziibbaa
-
----

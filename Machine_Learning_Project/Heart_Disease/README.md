@@ -134,6 +134,7 @@ Dropout(0.3)
 Linear → 2
 ```
 
+
 Training
 
 * CrossEntropyLoss

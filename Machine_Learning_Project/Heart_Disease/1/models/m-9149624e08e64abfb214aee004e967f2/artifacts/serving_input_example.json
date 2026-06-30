@@ -1,0 +1,36 @@
+{
+  "dataframe_split": {
+    "columns": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal"
+    ],
+    "data": [
+      [
+        61.0,
+        1.0,
+        4.0,
+        140.0,
+        207.0,
+        0.0,
+        2.0,
+        138.0,
+        1.0,
+        1.9,
+        1.0,
+        1,
+        7
+      ]
+    ]
+  }
+}

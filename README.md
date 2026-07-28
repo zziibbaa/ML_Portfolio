@@ -123,7 +123,7 @@ Currently I'm focusing on:
 | Project | Link |
 |---------|------|
 | 🏡 Ames Housing Price Prediction | [Open](Machine_Learning/Ames_Housing_Price_Prediction/) |
-| ❤️ Heart Disease (Logistic Regression) | [Open](Machine_Learning/Heart_Disease_Prediction/) |
+| ❤️ Heart Disease (Logistic Regression) | [Open](Machine_Learning/Heart_Disease_Logistic_Regression/) |
 | 🧬 Gene Expression Classification | [Open](Machine_Learning/Gene_Expression_Classification/) |
 | 🪨 Rock Density Regression | [Open](Machine_Learning/Rock_Density_Regression/) |
 
@@ -133,7 +133,7 @@ Currently I'm focusing on:
 
 | Project | Link |
 |---------|------|
-| ❤️ Heart Disease End-to-End (PyTorch) | [Open](Machine_Learning/Heart_Disease_END_to_END_Project/) |
+| ❤️ Heart Disease End-to-End (PyTorch) | [Open](Machine_Learning/Heart_Disease_End_to_End/) |
 | 🔤 EMNIST Character Classification *(Coming Soon)* | — |
 
 ---

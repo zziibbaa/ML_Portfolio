@@ -159,7 +159,7 @@ This project demonstrates the complete Machine Learning lifecycle including:
 
 | Project | Link |
 |---------|------|
-| ❤️ Heart Disease Prediction (End-to-End) | [Open](Machine_Learning/Heart_Disease_Prediction/) |
+| ❤️ Heart Disease Prediction (End-to-End) | [Open](Machine_Learning/Heart_Disease_End_to_End/) |
 | 🔤 EMNIST Character Classification *(Coming Soon)* | --- |
 
 ---

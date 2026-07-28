@@ -5,11 +5,11 @@
 <p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-MachineLearning-orange)
 ![PyTorch](https://img.shields.io/badge/PyTorch-DeepLearning-red)
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
 ![Docker](https://img.shields.io/badge/Docker-Deployment-blue)
-![MLflow](https://img.shields.io/badge/MLflow-Experiment%20Tracking-purple)
+![MLflow](https://img.shields.io/badge/MLflow-ExperimentTracking-purple)
 ![SQL](https://img.shields.io/badge/SQL-Database-lightgrey)
 
 </p>
@@ -20,15 +20,15 @@
 
 Hi!
 
-I'm **Ziba Hatamian**, a Junior Machine Learning Engineer with a background in Biotechnology.
+I'm **Ziba Hatamian**, a Machine Learning Engineer with a background in Biotechnology.
 
-I enjoy building complete Machine Learning pipelines—from data preprocessing and exploratory analysis to model training, evaluation, deployment, and experiment tracking.
+I enjoy building complete Machine Learning solutions—from data preprocessing and exploratory data analysis to model training, evaluation, deployment, and experiment tracking.
 
-Currently, I'm expanding my expertise in **Deep Learning**, **Computer Vision**, and **MLOps** while building production-oriented projects using PyTorch, FastAPI, Docker, and MLflow.
+Currently, I'm expanding my expertise in **Deep Learning (PyTorch)**, **Computer Vision**, and **MLOps**, while building production-oriented machine learning projects.
 
 ---
 
-# 🧰 Technical Skills
+# 🛠 Technical Skills
 
 ### Programming
 
@@ -57,11 +57,12 @@ Currently, I'm expanding my expertise in **Deep Learning**, **Computer Vision**,
 
 - PyTorch
 - Feed Forward Neural Networks
-- Convolutional Neural Networks (CNN)
+- Convolutional Neural Networks (Currently Learning)
 
 ### NLP
 
 - TF-IDF
+- CountVectorizer
 - Naive Bayes
 - Logistic Regression
 - Linear SVM
@@ -82,94 +83,108 @@ Currently, I'm expanding my expertise in **Deep Learning**, **Computer Vision**,
 
 ---
 
-# 📂 Portfolio Structure
+# 📂 Repository Structure
 
 ```
 ML_Portfolio
 │
-├── Machine_Learning_Project
+├── Machine_Learning
 │
-│   ├── Exploratory Data Analysis
+│   ├── Exploratory_Data_Analysis
 │   ├── Regression
 │   ├── Classification
 │   ├── NLP
 │   ├── Clustering
 │   ├── Deployment
-│   └── Deep Learning
+│   └── Deep_Learning
 │
 └── SQL_Project
 ```
 
 ---
 
-# 📊 Featured Projects
+# ⭐ Featured Project
 
-## 📈 Exploratory Data Analysis
+## ❤️ Heart Disease Prediction (End-to-End)
+
+A production-oriented Machine Learning project comparing **Logistic Regression** and a **PyTorch Feed Forward Neural Network**.
+
+### Highlights
+
+- Exploratory Data Analysis
+- Scikit-Learn Pipeline
+- Logistic Regression
+- Feed Forward Neural Network
+- Threshold Optimization
+- MLflow Experiment Tracking
+- FastAPI REST API
+- Docker Deployment
+
+📁 Repository
+
+```
+Machine_Learning/Heart_Disease_Prediction
+```
+
+---
+
+# 📊 Exploratory Data Analysis
 
 | Project | Description |
 |----------|-------------|
-| 🎬 Fandango Movie Ratings | Analysis of movie rating bias |
-| 🌧 India Rainfall Analysis | Rainfall trend analysis |
-| 📺 Netflix Content Strategy | Netflix viewing behavior and release strategy |
+| 🎬 Fandango Ratings Analysis | Investigating movie rating bias |
+| 🌧 Rainfall Trends Analysis | Long-term rainfall analysis |
+| 📺 Netflix Content Strategy Analysis | Content and viewing trend analysis |
 
 ---
 
-## 🤖 Machine Learning
+# 🤖 Machine Learning
 
-| Project | Algorithms |
-|----------|------------|
+| Project | Main Algorithms |
+|----------|-----------------|
 | 🏡 Ames Housing Price Prediction | ElasticNet |
 | ❤️ Heart Disease Prediction | Logistic Regression |
 | 🧬 Gene Expression Classification | KNN Pipeline |
-| 🪨 Rock Density Prediction | Multiple Regression Models |
+| 🪨 Rock Density Regression | Linear Regression, Random Forest, SVR, Gradient Boosting, AdaBoost |
 
 ---
 
-## 🧠 Deep Learning
-
-| Project | Framework |
-|----------|-----------|
-| ❤️ Heart Disease Prediction | PyTorch Feed Forward Neural Network |
-| 🔤 EMNIST Character Classification | Convolutional Neural Network (CNN) *(In Progress)* |
-
----
-
-## 💬 Natural Language Processing
+# 💬 Natural Language Processing
 
 | Project | Algorithms |
 |----------|------------|
 | ✈️ Twitter Airline Sentiment Analysis | Naive Bayes, Logistic Regression, LinearSVC |
-| 🎬 IMDB Review Classification | Naive Bayes, LinearSVC |
+| 🎬 IMDB Movie Review Sentiment Analysis | Naive Bayes, LinearSVC |
 
 ---
 
-## 🌀 Clustering
+# 🌀 Clustering
 
 | Project | Algorithm |
 |----------|-----------|
-| 🏦 Bank Marketing | KMeans |
-| 🌍 World Factbook | KMeans |
-| 🛒 Wholesale Customers | DBSCAN |
+| 🏦 Bank Marketing Clustering | KMeans |
+| 🌍 World Factbook Clustering | KMeans |
+| 🛒 Wholesale Customers Clustering | DBSCAN |
 
 ---
 
-## 🚀 Deployment & MLOps
+# 🚀 Deployment & MLOps
 
-### Heart Disease API
+## Heart Disease API
 
-End-to-end deployment including
+Technologies
 
 - PyTorch
 - FastAPI
-- MLflow
 - Docker
-- Pydantic Validation
+- MLflow
+- Pydantic
 
 ---
 
-### Advertising Prediction API
+## Advertising Prediction API
 
-Deployment pipeline using
+Technologies
 
 - Scikit-Learn
 - FastAPI
@@ -178,52 +193,68 @@ Deployment pipeline using
 
 ---
 
-## 🗄 SQL
+# 🗄 SQL
 
-### Northwind SQL Project
+## Northwind SQL Project
 
-- 30 SQL Exercises
-- Joins
-- Aggregation
-- Group By
+Topics Covered
+
+- SELECT
+- WHERE
+- ORDER BY
+- GROUP BY
+- HAVING
+- JOINs
+- Aggregate Functions
 - Subqueries
 - Business Queries
 
----
-
-# 🛠 Technologies
-
-<p>
-
-Python • SQL • Pandas • NumPy • Matplotlib • Plotly
-
-Scikit-Learn • PyTorch • FastAPI • Flask
-
-Docker • MLflow • Git • GitHub
-
-</p>
+30 practical SQL exercises based on the Northwind database.
 
 ---
 
-# 🎯 Current Learning
+# 🧰 Technologies
 
-I'm currently studying
+```
+Python
+SQL
+Pandas
+NumPy
+Matplotlib
+Plotly
 
-- Advanced CNN Architectures
+Scikit-Learn
+PyTorch
+
+FastAPI
+Flask
+
+Docker
+MLflow
+
+Git
+GitHub
+```
+
+---
+
+# 📚 Currently Learning
+
+- Convolutional Neural Networks (CNN)
 - Transfer Learning
+- Computer Vision
 - Object Detection
 - MLOps
 - Model Deployment
-- Transformer Models
 
 ---
 
-# 📈 Future Projects
+# 🎯 Planned Projects
 
-- Vision Transformer (ViT)
 - ResNet
-- U-Net
+- Vision Transformer (ViT)
 - YOLO
+- U-Net
 - LSTM
 - Transformer
 - Recommendation Systems
@@ -235,14 +266,18 @@ I'm currently studying
 
 **Ziba Hatamian**
 
-GitHub
+📧 Email
 
-https://github.com/zziibbaa
-
-Email
-
+```
 z.228hatamian@gmail.com
+```
+
+💻 GitHub
+
+```
+https://github.com/zziibbaa
+```
 
 ---
 
-⭐ If you find these projects useful, feel free to star the repository.
+⭐ If you find these projects interesting, feel free to explore the repositories or connect with me.

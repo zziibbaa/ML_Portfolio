@@ -187,7 +187,7 @@ This project demonstrates the complete Machine Learning lifecycle including:
 
 | Project | Link |
 |---------|------|
-| 🚀 MLflow • FastAPI • Docker Deployment | [Open](Machine_Learning/MLflow_FastAPI_Docker_Deployment/) |
+| 🚀 Advertising Sales Prediction (MLflow • FastAPI • Docker) | [Open](Machine_Learning/Advertising Sales Prediction (MLflow • FastAPI • Docker)/) |
 
 ---
 

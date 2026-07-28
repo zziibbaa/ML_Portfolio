@@ -18,7 +18,7 @@
 
 # ⭐ Portfolio Highlights
 
-- 15+ Machine Learning and Data Analysis Projects
+- 12+ Machine Learning and Data Analysis Projects
 - End-to-End Machine Learning Deployment using FastAPI & Docker
 - Experiment Tracking with MLflow
 - Machine Learning and Deep Learning Projects with PyTorch

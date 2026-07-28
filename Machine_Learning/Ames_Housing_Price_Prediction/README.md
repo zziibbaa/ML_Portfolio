@@ -217,10 +217,8 @@ Ames_Housing_Price_Prediction/
 │
 ├── data/
 ├── notebooks/
-├── images/
 ├── saved_models/
 ├── README.md
-└── requirements.txt
 ```
 
 ---
@@ -239,21 +237,6 @@ Ames_Housing_Price_Prediction/
 
 ---
 
-# 🚀 Installation
-
-```bash
-git clone https://github.com/zziibbaa/ML_Portfolio.git
-
-cd ML_Portfolio/Machine_Learning/Ames_Housing_Price_Prediction
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
 
 # 📌 Key Findings
 

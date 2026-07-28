@@ -13,7 +13,7 @@ The project demonstrates a complete ML workflow including model training, experi
 - MLflow Experiment Tracking
 - FastAPI REST API Development
 - Dockerized Deployment
-- Model Serialization with Pickle
+- Model Serialization with Joblib
 - Production-oriented Project Structure
 
 ---

@@ -102,7 +102,7 @@ Currently I'm focusing on:
 
 📂 Project
 
-👉 **[Heart Disease Prediction](Machine_Learning_Project/Heart_Disease_End_to_End/)**
+👉 **[Heart Disease Prediction](Machine_Learning/Heart_Disease_End_to_End/)**
 
 ---
 
@@ -112,9 +112,9 @@ Currently I'm focusing on:
 
 | Project | Link |
 |---------|------|
-| 🎬 Fandango Ratings Analysis | [Open](Machine_Learning_Project/Fandango_Ratings_Analysis/) |
-| 🌧 Rainfall Trends Analysis | [Open](Machine_Learning_Project/Rainfall_Trends_Analysis/) |
-| 📺 Netflix Content Strategy | [Open](Machine_Learning_Project/Netflix_Content_Strategy_Analysis/) |
+| 🎬 Fandango Ratings Analysis | [Open](Machine_Learning/Fandango_Ratings_Analysis/) |
+| 🌧 Rainfall Trends Analysis | [Open](Machine_Learning/Rainfall_Trends_Analysis/) |
+| 📺 Netflix Content Strategy | [Open](Machine_Learning/Netflix_Content_Strategy_Analysis/) |
 
 ---
 
@@ -122,10 +122,10 @@ Currently I'm focusing on:
 
 | Project | Link |
 |---------|------|
-| 🏡 Ames Housing Price Prediction | [Open](Machine_Learning_Project/Ames_Housing_Price_Prediction/) |
-| ❤️ Heart Disease (Logistic Regression) | [Open](Machine_Learning_Project/Heart_Disease_Prediction/) |
-| 🧬 Gene Expression Classification | [Open](Machine_Learning_Project/Gene_Expression_Classification/) |
-| 🪨 Rock Density Regression | [Open](Machine_Learning_Project/Rock_Density_Regression/) |
+| 🏡 Ames Housing Price Prediction | [Open](Machine_Learning/Ames_Housing_Price_Prediction/) |
+| ❤️ Heart Disease (Logistic Regression) | [Open](Machine_Learning/Heart_Disease_Prediction/) |
+| 🧬 Gene Expression Classification | [Open](Machine_Learning/Gene_Expression_Classification/) |
+| 🪨 Rock Density Regression | [Open](Machine_Learning/Rock_Density_Regression/) |
 
 ---
 
@@ -133,7 +133,7 @@ Currently I'm focusing on:
 
 | Project | Link |
 |---------|------|
-| ❤️ Heart Disease End-to-End (PyTorch) | [Open](Machine_Learning_Project/Heart_Disease_END_to_END_Project/) |
+| ❤️ Heart Disease End-to-End (PyTorch) | [Open](Machine_Learning/Heart_Disease_END_to_END_Project/) |
 | 🔤 EMNIST Character Classification *(Coming Soon)* | — |
 
 ---
@@ -142,8 +142,8 @@ Currently I'm focusing on:
 
 | Project | Link |
 |---------|------|
-| ✈ Twitter Airline Sentiment Analysis | [Open](Machine_Learning_Project/Twitter_Airline_Sentiment_Analysis/) |
-| 🎬 IMDB Movie Review Sentiment Analysis | [Open](Machine_Learning_Project/IMDB_Movie_Review_Sentiment_Analysis/) |
+| ✈ Twitter Airline Sentiment Analysis | [Open](Machine_Learning/Twitter_Airline_Sentiment_Analysis/) |
+| 🎬 IMDB Movie Review Sentiment Analysis | [Open](Machine_Learning/IMDB_Movie_Review_Sentiment_Analysis/) |
 
 ---
 
@@ -151,9 +151,9 @@ Currently I'm focusing on:
 
 | Project | Link |
 |---------|------|
-| 🏦 Bank Marketing Clustering | [Open](Machine_Learning_Project/Bank_Marketing_Clustering/) |
-| 🌍 World Factbook Clustering | [Open](Machine_Learning_Project/World_Factbook_Clustering/) |
-| 🛒 Wholesale Customers (DBSCAN) | [Open](Machine_Learning_Project/Wholesale_Customers_DBSCAN/) |
+| 🏦 Bank Marketing Clustering | [Open](Machine_Learning/Bank_Marketing_Clustering/) |
+| 🌍 World Factbook Clustering | [Open](Machine_Learning/World_Factbook_Clustering/) |
+| 🛒 Wholesale Customers (DBSCAN) | [Open](Machine_Learning/Wholesale_Customers_DBSCAN/) |
 
 ---
 
@@ -161,7 +161,7 @@ Currently I'm focusing on:
 
 | Project | Link |
 |---------|------|
-| 🚀 MLflow • FastAPI • Docker Deployment | [Open](Machine_Learning_Project/MLflow_FastAPI_Docker_Deployment/) |
+| 🚀 MLflow • FastAPI • Docker Deployment | [Open](Machine_Learning/MLflow_FastAPI_Docker_Deployment/) |
 
 ---
 

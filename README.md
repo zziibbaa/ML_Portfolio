@@ -16,21 +16,65 @@
 
 ---
 
+# ⭐ Portfolio Highlights
+
+- 15+ Machine Learning and Data Analysis Projects
+- End-to-End Machine Learning Deployment using FastAPI & Docker
+- Experiment Tracking with MLflow
+- Machine Learning and Deep Learning Projects with PyTorch
+- NLP, Clustering and Regression Applications
+- SQL and Data Analysis Projects
+- Continuous Learning in Computer Vision and MLOps
+
+---
+
 # 👋 About Me
 
 Hi, I'm **Ziba Hatamian**.
 
-I'm a **Junior Machine Learning Engineer** with a background in Biotechnology.
+I'm a **Junior Machine Learning Engineer** with a background in Biotechnology and a strong interest in building end-to-end Machine Learning systems.
 
-I enjoy building complete machine learning systems—from data preprocessing and exploratory analysis to model training, evaluation, deployment, and experiment tracking.
-
-Currently I'm focusing on:
+My projects focus on:
 
 - Machine Learning
 - Deep Learning
-- Computer Vision
-- MLOps
+- Natural Language Processing (NLP)
 - Model Deployment
+- MLOps
+- Data Analysis
+
+I enjoy transforming data into deployable solutions using modern tools such as PyTorch, Scikit-Learn, FastAPI, Docker, and MLflow.
+
+---
+
+# ❤️ Featured End-to-End Project
+
+## Heart Disease Prediction
+
+This project demonstrates the complete Machine Learning lifecycle including:
+
+- Data preprocessing pipelines
+- Logistic Regression baseline modeling
+- PyTorch Feed Forward Neural Network
+- Validation-based threshold optimization
+- Experiment tracking with MLflow
+- REST API development using FastAPI
+- Docker containerization and deployment
+- Model evaluation and comparison
+
+#### Technologies
+
+- PyTorch
+- Scikit-Learn
+- FastAPI
+- Docker
+- MLflow
+- Joblib
+- Pydantic
+
+#### Project Link
+
+> **[Open Project](Machine_Learning/Heart_Disease_Prediction/)**
 
 ---
 
@@ -40,13 +84,6 @@ Currently I'm focusing on:
 
 - Python
 - SQL
-
-### Data Analysis
-
-- Pandas
-- NumPy
-- Matplotlib
-- Plotly
 
 ### Machine Learning
 
@@ -62,8 +99,15 @@ Currently I'm focusing on:
 ### Deep Learning
 
 - PyTorch
-- Feed Forward Neural Networks
+- Feed Forward Neural Networks (FFN)
 - Convolutional Neural Networks (CNN)
+
+### Data Analysis
+
+- Pandas
+- NumPy
+- Matplotlib
+- Plotly
 
 ### NLP
 
@@ -88,25 +132,8 @@ Currently I'm focusing on:
 
 ---
 
-# ⭐ Featured End-to-End Project
+# 📂 Portfolio Projects
 
-## ❤️ Heart Disease Prediction
-
-> End-to-end Machine Learning & Deep Learning project including:
-
-- Logistic Regression
-- PyTorch Feed Forward Neural Network
-- MLflow Experiment Tracking
-- FastAPI REST API
-- Docker Deployment
-
-📂 Project
-
-👉 **[Heart Disease Prediction](Machine_Learning/Heart_Disease_End_to_End/)**
-
----
-
-# 📂 Portfolio
 
 ## 📊 Exploratory Data Analysis
 
@@ -114,7 +141,7 @@ Currently I'm focusing on:
 |---------|------|
 | 🎬 Fandango Ratings Analysis | [Open](Machine_Learning/Fandango_Ratings_Analysis/) |
 | 🌧 Rainfall Trends Analysis | [Open](Machine_Learning/Rainfall_Trends_Analysis/) |
-| 📺 Netflix Content Strategy | [Open](Machine_Learning/Netflix_Content_Strategy_Analysis/) |
+| 📺 Netflix Content Strategy Analysis | [Open](Machine_Learning/Netflix_Content_Strategy_Analysis/) |
 
 ---
 
@@ -123,7 +150,6 @@ Currently I'm focusing on:
 | Project | Link |
 |---------|------|
 | 🏡 Ames Housing Price Prediction | [Open](Machine_Learning/Ames_Housing_Price_Prediction/) |
-| ❤️ Heart Disease (Logistic Regression) | [Open](Machine_Learning/Heart_Disease_Logistic_Regression/) |
 | 🧬 Gene Expression Classification | [Open](Machine_Learning/Gene_Expression_Classification/) |
 | 🪨 Rock Density Regression | [Open](Machine_Learning/Rock_Density_Regression/) |
 
@@ -133,8 +159,8 @@ Currently I'm focusing on:
 
 | Project | Link |
 |---------|------|
-| ❤️ Heart Disease End-to-End (PyTorch) | [Open](Machine_Learning/Heart_Disease_End_to_End/) |
-| 🔤 EMNIST Character Classification *(Coming Soon)* | — |
+| ❤️ Heart Disease Prediction (End-to-End) | [Open](Machine_Learning/Heart_Disease_Prediction/) |
+| 🔤 EMNIST Character Classification *(Coming Soon)* | --- |
 
 ---
 
@@ -142,7 +168,7 @@ Currently I'm focusing on:
 
 | Project | Link |
 |---------|------|
-| ✈ Twitter Airline Sentiment Analysis | [Open](Machine_Learning/Twitter_Airline_Sentiment_Analysis/) |
+| ✈️ Twitter Airline Sentiment Analysis | [Open](Machine_Learning/Twitter_Airline_Sentiment_Analysis/) |
 | 🎬 IMDB Movie Review Sentiment Analysis | [Open](Machine_Learning/IMDB_Movie_Review_Sentiment_Analysis/) |
 
 ---
@@ -173,51 +199,43 @@ Currently I'm focusing on:
 
 ---
 
-# 🛠 Technologies
+# 🎯 Current Learning Journey
 
-Python • SQL • Pandas • NumPy • Matplotlib • Plotly
+I'm currently expanding my knowledge in:
 
-Scikit-Learn • PyTorch • FastAPI • Flask
-
-Docker • MLflow • Git • GitHub
-
----
-
-# 🎯 Currently Learning
-
-- CNN Architectures
+- Deep Learning
+- Computer Vision
 - Transfer Learning
-- Object Detection
-- Model Deployment
 - MLOps
-- Transformer Models
+- Transformer-based Models
 
 ---
 
-# 📈 Upcoming Projects
+# 🛣 Learning Roadmap
+
+Future projects in this portfolio will include:
 
 - ResNet
 - Vision Transformer (ViT)
-- U-Net
 - YOLO
-- LSTM
-- Transformer
+- U-Net
 - Recommendation Systems
+- LSTM Networks
 - Time Series Forecasting
 
 ---
 
 # 📫 Contact
 
-**Ziba Hatamian**
+### Ziba Hatamian
 
-📧 **Email**
+#### Email
 
-z.228hatamian@gmail.com
+- <z.228hatamian@gmail.com>
 
-🐙 **GitHub**
+#### GitHub
 
-https://github.com/zziibbaa
+- https://github.com/zziibbaa
 
 ---
 

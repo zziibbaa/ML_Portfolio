@@ -102,7 +102,7 @@ Currently I'm focusing on:
 
 📂 Project
 
-👉 **[Heart Disease Prediction](Machine_Learning_Project/Heart_Disease_END_to_END_Project/)**
+👉 **[Heart Disease Prediction](Machine_Learning_Project/Heart_Disease_End_to_End/)**
 
 ---
 

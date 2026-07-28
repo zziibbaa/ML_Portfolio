@@ -1,143 +1,248 @@
-# Machine Learning & SQL Portfolio – MyProject
+# 🚀 Machine Learning Portfolio
 
-مجموعه‌ای از پروژه‌های یادگیری ماشین و SQL با تمرکز بر تحلیل داده، مدل‌سازی، خوشه‌بندی، طبقه‌بندی متون و دیپلوی مدل‌ها.  
-هر پروژه با ابزارهای مدرن مانند Scikit-learn، FastAPI، Flask، Plotly، Docker و SQL پیاده‌سازی شده است.
+> A collection of Machine Learning, Deep Learning, NLP, Data Analysis, SQL, and MLOps projects built with Python.
 
----
+<p align="center">
 
-## 🗂 فهرست پروژه‌ها
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![PyTorch](https://img.shields.io/badge/PyTorch-DeepLearning-red)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
+![Docker](https://img.shields.io/badge/Docker-Deployment-blue)
+![MLflow](https://img.shields.io/badge/MLflow-Experiment%20Tracking-purple)
+![SQL](https://img.shields.io/badge/SQL-Database-lightgrey)
 
-- [🔍 تحلیل اکتشافی داده‌ها (EDA)](#-تحلیل-اکتشافی-داده‌ها-eda)
-- [📊 مدل‌سازی و پیش‌بینی](#-مدل‌سازی-و-پیش‌بینی)
-- [💬 طبقه‌بندی متون (NLP)](#-طبقه‌بندی-متون-nlp)
-- [🌀 خوشه‌بندی داده‌ها](#-خوشه‌بندی-داده‌ها)
-- [🚀 دیپلوی مدل‌ها (API)](#-دیپلوی-مدل‌ها-api)
-- [🏢 پروژه SQL – Northwind](#-پروژه-sql--northwind)
-- [⚙️ تکنولوژی‌های استفاده شده](#️-تکنولوژی‌های-استفاده-شده)
-- [📄 مجوز](#-مجوز)
-- [🙋‍♀️ درباره من](#-درباره-من)
+</p>
 
 ---
 
-## 🔍 تحلیل اکتشافی داده‌ها (EDA)
+# 👋 About Me
 
-| عنوان پروژه | توضیح |
-|-------------|-------|
-| 🎬 Fandango Ratings | بررسی دستکاری امتیازات فیلم‌ها |
-| 🌧 Rainfall in India | تحلیل روند بارندگی |
-| 🎞 Netflix Strategy | تحلیل محتوای نتفلیکس |
+Hi!
 
----
+I'm **Ziba Hatamian**, a Junior Machine Learning Engineer with a background in Biotechnology.
 
-## 📊 مدل‌سازی و پیش‌بینی
+I enjoy building complete Machine Learning pipelines—from data preprocessing and exploratory analysis to model training, evaluation, deployment, and experiment tracking.
 
-| عنوان پروژه | الگوریتم‌ها | تکنیک‌ها |
-|-------------|-------------|----------|
-| 🏠 Ames Housing | Elastic Net | Imputation, GridSearch |
-| ❤️ Heart Disease | Logistic Regression | ارزیابی متریک‌ها |
-| 🧬 Gene Expression | KNN | Pipeline |
-| 🪨 Rock Density | RandomForest | مقایسه مدل‌ها |
+Currently, I'm expanding my expertise in **Deep Learning**, **Computer Vision**, and **MLOps** while building production-oriented projects using PyTorch, FastAPI, Docker, and MLflow.
 
 ---
 
-## 💬 طبقه‌بندی متون (NLP)
+# 🧰 Technical Skills
 
-| عنوان پروژه | الگوریتم‌ها |
-|-------------|-------------|
-| 🎭 IMDB Reviews | MultinomialNB |
-| ✈ Twitter Airline | Logistic, SVC |
+### Programming
+
+- Python
+- SQL
+
+### Data Analysis
+
+- Pandas
+- NumPy
+- Matplotlib
+- Plotly
+
+### Machine Learning
+
+- Scikit-learn
+- Classification
+- Regression
+- Clustering
+- Cross Validation
+- Hyperparameter Tuning
+- Feature Engineering
+- Pipelines
+
+### Deep Learning
+
+- PyTorch
+- Feed Forward Neural Networks
+- Convolutional Neural Networks (CNN)
+
+### NLP
+
+- TF-IDF
+- Naive Bayes
+- Logistic Regression
+- Linear SVM
+
+### Deployment & MLOps
+
+- FastAPI
+- Flask
+- Docker
+- MLflow
+
+### Tools
+
+- Git
+- GitHub
+- Jupyter Notebook
+- VS Code
 
 ---
 
-## 🌀 خوشه‌بندی داده‌ها
+# 📂 Portfolio Structure
 
-| عنوان پروژه | الگوریتم |
-|-------------|-----------|
+```
+ML_Portfolio
+│
+├── Machine_Learning_Project
+│
+│   ├── Exploratory Data Analysis
+│   ├── Regression
+│   ├── Classification
+│   ├── NLP
+│   ├── Clustering
+│   ├── Deployment
+│   └── Deep Learning
+│
+└── SQL_Project
+```
+
+---
+
+# 📊 Featured Projects
+
+## 📈 Exploratory Data Analysis
+
+| Project | Description |
+|----------|-------------|
+| 🎬 Fandango Movie Ratings | Analysis of movie rating bias |
+| 🌧 India Rainfall Analysis | Rainfall trend analysis |
+| 📺 Netflix Content Strategy | Netflix viewing behavior and release strategy |
+
+---
+
+## 🤖 Machine Learning
+
+| Project | Algorithms |
+|----------|------------|
+| 🏡 Ames Housing Price Prediction | ElasticNet |
+| ❤️ Heart Disease Prediction | Logistic Regression |
+| 🧬 Gene Expression Classification | KNN Pipeline |
+| 🪨 Rock Density Prediction | Multiple Regression Models |
+
+---
+
+## 🧠 Deep Learning
+
+| Project | Framework |
+|----------|-----------|
+| ❤️ Heart Disease Prediction | PyTorch Feed Forward Neural Network |
+| 🔤 EMNIST Character Classification | Convolutional Neural Network (CNN) *(In Progress)* |
+
+---
+
+## 💬 Natural Language Processing
+
+| Project | Algorithms |
+|----------|------------|
+| ✈️ Twitter Airline Sentiment Analysis | Naive Bayes, Logistic Regression, LinearSVC |
+| 🎬 IMDB Review Classification | Naive Bayes, LinearSVC |
+
+---
+
+## 🌀 Clustering
+
+| Project | Algorithm |
+|----------|-----------|
 | 🏦 Bank Marketing | KMeans |
 | 🌍 World Factbook | KMeans |
 | 🛒 Wholesale Customers | DBSCAN |
 
 ---
 
-## 🚀 دیپلوی مدل‌ها (API)
+## 🚀 Deployment & MLOps
 
-📁 مسیر پروژه: `MyProject/05_Deployment/`
+### Heart Disease API
 
-### Deployment Pipeline
+End-to-end deployment including
 
-```
-Training Script
-      ↓
-Saved Model (.pkl)
-      ↓
-FastAPI Endpoint
-      ↓
-Docker Container
-      ↓
-Client Request / Swagger UI
-```
+- PyTorch
+- FastAPI
+- MLflow
+- Docker
+- Pydantic Validation
 
 ---
 
-### ویژگی‌ها
+### Advertising Prediction API
 
-- RESTful API با FastAPI و Flask  
-- مستندسازی خودکار با Swagger  
-- استفاده از Pipeline برای پیش‌پردازش  
-- تست با pytest  
-- اجرای کانتینری با Docker  
+Deployment pipeline using
 
----
-
-## 🏢 پروژه SQL – Northwind
-
-این پروژه شامل **۳۰ تمرین SQL** بر اساس دیتابیس Northwind است.
-
-### SQL Project Flow
-
-```
-Northwind Database
-      ↓
-Exercise.sql Queries
-      ↓
-Data Analysis & Business Insights
-```
+- Scikit-Learn
+- FastAPI
+- Docker
+- MLflow
 
 ---
 
-### ساختار پروژه
+## 🗄 SQL
 
-```
-SQL_Project/
-├── NorthWind_Project/
-│   ├── Exercise.sql
-│   └── README.md
-└── Northwind/
-```
+### Northwind SQL Project
 
----
-
-## ⚙️ تکنولوژی‌های استفاده شده
-
-| دسته‌بندی | ابزار |
-|-----------|--------|
-| Programming | Python, SQL |
-| Data | Pandas, NumPy |
-| ML | Scikit-learn |
-| Visualization | Matplotlib, Plotly |
-| API | FastAPI, Flask |
-| Deployment | Docker |
-| Testing | Pytest |
+- 30 SQL Exercises
+- Joins
+- Aggregation
+- Group By
+- Subqueries
+- Business Queries
 
 ---
 
-## 📄 مجوز
+# 🛠 Technologies
 
-MIT License
+<p>
+
+Python • SQL • Pandas • NumPy • Matplotlib • Plotly
+
+Scikit-Learn • PyTorch • FastAPI • Flask
+
+Docker • MLflow • Git • GitHub
+
+</p>
 
 ---
 
-## 🙋‍♀️ درباره من
+# 🎯 Current Learning
 
-فارغ‌التحصیل بیوتکنولوژی با تمرکز بر Machine Learning و Data Science  
-📎 GitHub: https://github.com/zziibbaa
+I'm currently studying
+
+- Advanced CNN Architectures
+- Transfer Learning
+- Object Detection
+- MLOps
+- Model Deployment
+- Transformer Models
+
+---
+
+# 📈 Future Projects
+
+- Vision Transformer (ViT)
+- ResNet
+- U-Net
+- YOLO
+- LSTM
+- Transformer
+- Recommendation Systems
+- Time Series Forecasting
+
+---
+
+# 📫 Contact
+
+**Ziba Hatamian**
+
+GitHub
+
+https://github.com/zziibbaa
+
+Email
+
+z.228hatamian@gmail.com
+
+---
+
+⭐ If you find these projects useful, feel free to star the repository.

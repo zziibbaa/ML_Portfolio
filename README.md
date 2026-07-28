@@ -74,7 +74,7 @@ This project demonstrates the complete Machine Learning lifecycle including:
 
 #### Project Link
 
-> **[Open Project](Machine_Learning/Heart_Disease_Prediction/)**
+> **[Open Project](Machine_Learning/Heart_Disease_End_to_End/)**
 
 ---
 

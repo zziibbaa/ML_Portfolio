@@ -1,6 +1,6 @@
 # 🚀 Machine Learning Portfolio
 
-> A collection of Machine Learning, Deep Learning, NLP, Data Analysis, SQL, and MLOps projects built with Python.
+> **Machine Learning • Deep Learning • NLP • MLOps • SQL • Data Analysis**
 
 <p align="center">
 
@@ -22,9 +22,15 @@ Hi, I'm **Ziba Hatamian**.
 
 I'm a **Junior Machine Learning Engineer** with a background in Biotechnology.
 
-My primary interest is building complete Machine Learning systems—from data preprocessing and feature engineering to model training, evaluation, deployment, and experiment tracking.
+I enjoy building complete machine learning systems—from data preprocessing and exploratory analysis to model training, evaluation, deployment, and experiment tracking.
 
-Currently, I'm expanding my expertise in **Deep Learning**, **Computer Vision**, and **MLOps** using **PyTorch**, **FastAPI**, **Docker**, and **MLflow**.
+Currently I'm focusing on:
+
+- Machine Learning
+- Deep Learning
+- Computer Vision
+- MLOps
+- Model Deployment
 
 ---
 
@@ -48,9 +54,9 @@ Currently, I'm expanding my expertise in **Deep Learning**, **Computer Vision**,
 - Classification
 - Regression
 - Clustering
+- Feature Engineering
 - Cross Validation
 - Hyperparameter Tuning
-- Feature Engineering
 - Pipelines
 
 ### Deep Learning
@@ -82,90 +88,88 @@ Currently, I'm expanding my expertise in **Deep Learning**, **Computer Vision**,
 
 ---
 
-# 📂 Portfolio Structure
+# ⭐ Featured End-to-End Project
 
-```
-ML_Portfolio
-│
-├── Machine_Learning
-│   ├── EDA
-│   ├── Regression
-│   ├── Classification
-│   ├── NLP
-│   ├── Clustering
-│   ├── Deployment
-│   └── Deep Learning
-│
-└── SQL_Project
-```
+## ❤️ Heart Disease Prediction
+
+> End-to-end Machine Learning & Deep Learning project including:
+
+- Logistic Regression
+- PyTorch Feed Forward Neural Network
+- MLflow Experiment Tracking
+- FastAPI REST API
+- Docker Deployment
+
+📂 Project
+
+👉 **[Heart Disease Prediction](Machine_Learning_Project/Heart_Disease_END_to_END_Project/)**
 
 ---
 
-# 📊 Featured Projects
+# 📂 Portfolio
 
-## 📈 Exploratory Data Analysis
+## 📊 Exploratory Data Analysis
 
-| Project | Description |
-|----------|-------------|
-| [🎬 Fandango Ratings Analysis](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/Fandango_Ratings_Analysis) | Analysis of movie rating bias |
-| [🌧 Rainfall Trends Analysis](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/Rainfall_Trends_Analysis) | Historical rainfall analysis |
-| [📺 Netflix Content Strategy Analysis](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/Netflix_Content_Strategy_Analysis) | Netflix content and viewing analysis |
+| Project | Link |
+|---------|------|
+| 🎬 Fandango Ratings Analysis | [Open](Machine_Learning_Project/Fandango_Ratings_Analysis/) |
+| 🌧 Rainfall Trends Analysis | [Open](Machine_Learning_Project/Rainfall_Trends_Analysis/) |
+| 📺 Netflix Content Strategy | [Open](Machine_Learning_Project/Netflix_Content_Strategy_Analysis/) |
 
 ---
 
 ## 🤖 Machine Learning
 
-| Project | Algorithms |
-|----------|------------|
-| [🏡 Ames Housing Price Prediction](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/Ames_Housing_Price_Prediction) | ElasticNet |
-| [❤️ Heart Disease Prediction](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/Heart_Disease_Prediction) | Logistic Regression |
-| [🧬 Gene Expression Classification](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/Gene_Expression_Classification) | KNN Pipeline |
-| [🪨 Rock Density Regression](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/Rock_Density_Regression) | Multiple Regression Models |
+| Project | Link |
+|---------|------|
+| 🏡 Ames Housing Price Prediction | [Open](Machine_Learning_Project/Ames_Housing_Price_Prediction/) |
+| ❤️ Heart Disease (Logistic Regression) | [Open](Machine_Learning_Project/Heart_Disease_Prediction/) |
+| 🧬 Gene Expression Classification | [Open](Machine_Learning_Project/Gene_Expression_Classification/) |
+| 🪨 Rock Density Regression | [Open](Machine_Learning_Project/Rock_Density_Regression/) |
 
 ---
 
 ## 🧠 Deep Learning
 
-| Project | Framework |
-|----------|-----------|
-| [❤️ Heart Disease End-to-End](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/Heart_Disease_END_to_END_Project) | PyTorch + FastAPI + Docker + MLflow |
-| 🔤 EMNIST Character Classification *(Coming Soon)* | CNN |
+| Project | Link |
+|---------|------|
+| ❤️ Heart Disease End-to-End (PyTorch) | [Open](Machine_Learning_Project/Heart_Disease_END_to_END_Project/) |
+| 🔤 EMNIST Character Classification *(Coming Soon)* | — |
 
 ---
 
 ## 💬 Natural Language Processing
 
-| Project | Algorithms |
-|----------|------------|
-| [✈ Twitter Airline Sentiment Analysis](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/Twitter_Airline_Sentiment_Analysis) | Naive Bayes, Logistic Regression, LinearSVC |
-| [🎬 IMDB Movie Review Sentiment Analysis](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/IMDB_Movie_Review_Sentiment_Analysis) | Naive Bayes, LinearSVC |
+| Project | Link |
+|---------|------|
+| ✈ Twitter Airline Sentiment Analysis | [Open](Machine_Learning_Project/Twitter_Airline_Sentiment_Analysis/) |
+| 🎬 IMDB Movie Review Sentiment Analysis | [Open](Machine_Learning_Project/IMDB_Movie_Review_Sentiment_Analysis/) |
 
 ---
 
 ## 🌀 Clustering
 
-| Project | Algorithm |
-|----------|-----------|
-| [🏦 Bank Marketing Clustering](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/Bank_Marketing_Clustering) | KMeans |
-| [🌍 World Factbook Clustering](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/World_Factbook_Clustering) | KMeans |
-| [🛒 Wholesale Customers DBSCAN](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/Wholesale_Customers_DBSCAN) | DBSCAN |
+| Project | Link |
+|---------|------|
+| 🏦 Bank Marketing Clustering | [Open](Machine_Learning_Project/Bank_Marketing_Clustering/) |
+| 🌍 World Factbook Clustering | [Open](Machine_Learning_Project/World_Factbook_Clustering/) |
+| 🛒 Wholesale Customers (DBSCAN) | [Open](Machine_Learning_Project/Wholesale_Customers_DBSCAN/) |
 
 ---
 
 ## 🚀 Deployment & MLOps
 
-| Project | Technologies |
-|----------|--------------|
-| [❤️ Heart Disease End-to-End](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/Heart_Disease_END_to_END_Project) | PyTorch, FastAPI, MLflow, Docker |
-| [📦 MLflow FastAPI Docker Deployment](https://github.com/zziibbaa/ML_Portfolio/tree/main/Machine_Learning/MLflow_FastAPI_Docker_Deployment) | Scikit-Learn, FastAPI, Docker, MLflow |
+| Project | Link |
+|---------|------|
+| 🚀 MLflow • FastAPI • Docker Deployment | [Open](Machine_Learning_Project/MLflow_FastAPI_Docker_Deployment/) |
 
 ---
 
 ## 🗄 SQL
 
-| Project | Description |
-|----------|-------------|
-| [🏢 Northwind SQL Project](https://github.com/zziibbaa/ML_Portfolio/tree/main/SQL_Project) | 30 SQL exercises including Joins, Aggregation, Subqueries, and Business Queries |
+| Project | Link |
+|---------|------|
+| 🏢 Northwind SQL Exercises | [Open](SQL_Project/NorthWind_Project/) |
 
 ---
 
@@ -181,23 +185,23 @@ Docker • MLflow • Git • GitHub
 
 # 🎯 Currently Learning
 
-- Advanced CNN Architectures
+- CNN Architectures
 - Transfer Learning
 - Object Detection
-- MLOps
 - Model Deployment
+- MLOps
 - Transformer Models
 
 ---
 
 # 📈 Upcoming Projects
 
-- Vision Transformer (ViT)
 - ResNet
+- Vision Transformer (ViT)
 - U-Net
 - YOLO
 - LSTM
-- Transformers
+- Transformer
 - Recommendation Systems
 - Time Series Forecasting
 
@@ -207,10 +211,14 @@ Docker • MLflow • Git • GitHub
 
 **Ziba Hatamian**
 
-📧 z.228hatamian@gmail.com
+📧 **Email**
 
-🐙 GitHub: https://github.com/zziibbaa
+z.228hatamian@gmail.com
+
+🐙 **GitHub**
+
+https://github.com/zziibbaa
 
 ---
 
-⭐ If you find these projects useful, feel free to star the repository.
+⭐ If you find these projects useful, consider giving the repository a star!

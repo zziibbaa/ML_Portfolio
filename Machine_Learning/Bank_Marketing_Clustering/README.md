@@ -1,72 +1,251 @@
-# 📦 Data Clustering Projects: Bank Marketing & World Factbook
+# 🏦 Bank Marketing Customer Segmentation using K-Means Clustering
 
-این پوشه شامل دو پروژه خوشه‌بندی داده‌هاست که با استفاده از تحلیل اکتشافی (EDA)، الگوریتم KMeans و بررسی معیار SSD انجام شده‌اند. هدف هر دو پروژه، شناسایی الگوهای پنهان در داده‌ها و ارائه بینش‌های قابل‌استفاده برای تصمیم‌گیری‌های هوشمندانه است.
+An unsupervised Machine Learning project that applies K-Means clustering to identify hidden customer segments within a bank marketing dataset.
 
----
-
-## 🏦 پروژه اول: خوشه‌بندی مشتریان بانک
-
-### 📌 توضیح پروژه
-تحلیل داده‌های بازاریابی بانکی برای شناسایی گروه‌های رفتاری مشتریان و بهینه‌سازی کمپین‌های تبلیغاتی.
-
-### 📊 منبع داده
-- [Bank Marketing Dataset – UCI](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
-
-### ⚙️ مراحل اجرا
-- ءEDA: بررسی توزیع ویژگی‌ها، همبستگی‌ها، داده‌های پرت
-- پیش‌پردازش:pandas.get_dummies()، نرمال‌سازی
-- اجرای KMeans برای خوشه‌بندی مشتریان
-- تحلیل SSD و رسم نمودار Elbow برای تعیین تعداد خوشه‌ها
-
-### 📈 نتایج
-#### - بهترین دسته بتدی ، تقسیم مشتریان به 6 خوشه مجزا است.
-- شناسایی گروه‌های مشتریان با رفتارهای متفاوت نسبت به کمپین‌های بازاریابی
-- ارائه بینش‌هایی برای طراحی کمپین‌های هدفمند و افزایش نرخ پاسخ
+The project includes Exploratory Data Analysis (EDA), data preprocessing, feature engineering, feature scaling, cluster analysis, and customer segmentation using the Elbow Method for selecting the optimal number of clusters.
 
 ---
 
-## 🌍 پروژه دوم: خوشه‌بندی کشورها با داده‌های World Factbook
+# 🚀 Project Highlights
 
-### 📌 توضیح پروژه
-تحلیل داده‌های کشورها برای شناسایی گروه‌های مشابه از نظر شاخص‌های اقتصادی، جمعیتی و اجتماعی.
-
-### 📊 منبع داده
-- [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/docs/faqs.html)
-
-### ⚙️ مراحل اجرا
-- استخراج ویژگی‌ها: GDP, Literacy Rate, Population, Internet Penetration و...
-- مدیریت داده های مفقود ،پاک‌سازی و نرمال‌سازی داده‌ها
-- اجرای KMeans برای خوشه‌بندی کشورها
-- تحلیل SSD و نمودار Elbow برای تعیین تعداد خوشه‌ها
-
-### 📈 نتایج
-### -بهترین تعداد خوشه حدود 15 خوشه است. 
-- شناسایی خوشه‌هایی از کشورها با ویژگی‌های مشابه
-- امکان تحلیل سیاست‌گذاری، توسعه اقتصادی و مقایسه منطقه‌ای
+- Exploratory Data Analysis (EDA)
+- Missing Value Handling
+- Feature Engineering
+- One-Hot Encoding of Categorical Features
+- Feature Scaling
+- K-Means Clustering
+- Elbow Method (SSD Analysis)
+- Customer Segmentation
+- Cluster Interpretation and Business Insights
+- Data Visualization
 
 ---
 
-## 🧰 ابزارهای استفاده‌شده
+# 🔄 Project Workflow
 
-| ابزار | کاربرد |
-|------|--------|
-| Python | زبان برنامه‌نویسی اصلی |
-| Pandas, NumPy | تحلیل و پردازش داده‌ها |
-| Scikit-learn | اجرای KMeans و پیش‌پردازش |
-| Matplotlib, Seaborn | رسم نمودارهای EDA و Elbow |
-| منابع خارجی | غنی‌سازی تحلیل با داده‌های واقعی |
+```text
+                 Bank Marketing Dataset
+                            │
+                            ▼
+                    Data Cleaning
+                            │
+                            ▼
+                 Exploratory Data Analysis
+                            │
+                            ▼
+                   Feature Engineering
+                            │
+                            ▼
+                  One-Hot Encoding
+                            │
+                            ▼
+                     Feature Scaling
+                            │
+                            ▼
+                    K-Means Clustering
+                            │
+                            ▼
+                     SSD Analysis
+                      (Elbow Method)
+                            │
+                            ▼
+                  Optimal Number of Clusters
+                            │
+                            ▼
+                     Cluster Analysis
+                            │
+                            ▼
+                      Business Insights
+```
 
 ---
 
-## 📚 منابع
+# 📊 Dataset
 
-- [Bank Marketing Dataset – UCI](https://archive.ics.uci.edu/ml/datasets/bank+marketing)  
-- [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/docs/faqs.html)  
-- [Scikit-learn Documentation](https://scikit-learn.org/stable/modules/clustering.html)
+The project uses the Bank Marketing Dataset provided by the UCI Machine Learning Repository.
+
+The dataset contains demographic and financial information about bank customers collected during direct marketing campaigns.
+
+### Examples of Features
+
+- Age
+- Job
+- Marital Status
+- Education
+- Balance
+- Housing Loan
+- Personal Loan
+- Contact Type
+- Campaign Information
+- Previous Marketing Outcomes
+
+The goal of this project is not prediction but discovering hidden customer groups with similar characteristics.
 
 ---
 
-## 📝 نتیجه‌گیری
+# 🔍 Exploratory Data Analysis
 
-این دو پروژه نشان می‌دهند که خوشه‌بندی داده‌ها می‌تواند در حوزه‌های مختلف از بازاریابی تا تحلیل کشورها کاربرد داشته باشد. استفاده از EDA و SSD در کنار KMeans منجر به بینش‌های قابل‌اجرا و تصمیم‌گیری‌های دقیق‌تر شده است.
+The following analyses were performed:
 
+- Distribution analysis of numerical features
+- Correlation analysis
+- Missing value inspection
+- Outlier analysis
+- Customer behavior visualization
+- Feature relationship analysis
+
+EDA provides valuable insights before applying clustering algorithms.
+
+---
+
+# ⚙️ Data Preprocessing
+
+The preprocessing pipeline includes:
+
+- Handling missing values
+- Encoding categorical variables
+- Feature scaling
+- Preparing data for K-Means clustering
+
+Feature scaling was particularly important since K-Means is distance-based and sensitive to feature magnitudes.
+
+---
+
+# 🤖 Model
+
+## K-Means Clustering
+
+The K-Means algorithm was used to segment customers into homogeneous groups based on their characteristics.
+
+The following steps were performed:
+
+- Training multiple K-Means models
+- Comparing SSD values
+- Applying the Elbow Method
+- Selecting the optimal number of clusters
+
+---
+
+# 📈 Evaluation Method
+
+### Elbow Method
+
+The Sum of Squared Distances (SSD) was used to determine the optimal number of clusters.
+
+```text
+SSD
+ │
+ │\
+ │ \
+ │  \
+ │   \
+ │    \______
+ │______________
+        K
+```
+
+The optimal number of clusters was selected based on the point where the decrease in SSD begins to stabilize.
+
+---
+
+# 📊 Results
+
+### Optimal Number of Clusters
+
+- Number of Clusters: **6**
+
+The model successfully identified six distinct customer groups with different behavioral characteristics.
+
+---
+
+# 📌 Key Findings
+
+The clustering results reveal that:
+
+- Customers exhibit distinct behavioral patterns.
+- Different customer segments may respond differently to marketing campaigns.
+- Customer segmentation can improve targeted marketing strategies.
+- Clustering provides useful business insights without requiring labeled data.
+
+---
+
+# 📂 Project Structure
+
+```text
+Bank_Marketing_Clustering/
+
+│
+├── Bank.csv
+├── Bank_Marketing.ipynb
+├── images/
+└── README.md
+```
+
+---
+
+# 🛠 Technologies
+
+- Python
+- Pandas
+- NumPy
+- Scikit-Learn
+- Matplotlib
+- Seaborn
+
+### Machine Learning Techniques
+
+- K-Means Clustering
+- Feature Scaling
+- One-Hot Encoding
+- Elbow Method
+- Exploratory Data Analysis
+
+---
+
+# 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/zziibbaa/ML_Portfolio.git
+```
+
+Move to the project directory
+
+```bash
+cd Machine_Learning/Bank_Marketing_Clustering
+```
+
+Install the required packages
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the notebook
+
+```bash
+jupyter notebook
+```
+
+---
+
+# 👩‍💻 Author
+
+### Ziba Hatamian
+
+M.Sc. in Biotechnology transitioning into Machine Learning and AI Engineering.
+
+### Areas of Interest
+
+- Machine Learning
+- Deep Learning
+- MLOps
+- Data Science
+- AI for Healthcare
+
+GitHub:
+
+```text
+https://github.com/zziibbaa
+```

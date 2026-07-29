@@ -129,9 +129,7 @@ These analyses provide insights into the structure of the dataset before applyin
 World_Factbook_Clustering/
 │
 ├── data/
-├── images/
 ├── notebooks/
-├── World_Factbook.ipynb
 └── README.md
 ```
 

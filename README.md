@@ -144,7 +144,7 @@ This project demonstrates the complete Machine Learning lifecycle including:
 | 🏡 Ames Housing Price Prediction | [Open](Machine_Learning/Ames_Housing_Price_Prediction/) |
 | 🧬 Gene Expression Classification | [Open](Machine_Learning/Gene_Expression_Classification/) |
 | 🪨 Rock Density Regression | [Open](Machine_Learning/Rock_Density_Regression/) |
-| 📈 Advertising Sales Prediction | [Open](Machine_Learning/Advertising_Sales_Prediction_MLflow_FastAPI_Docker/) |
+| 📈 Advertising Sales Prediction | [Open](Machine_Learning/Advertising_Deployment/) |
 
 ---
 

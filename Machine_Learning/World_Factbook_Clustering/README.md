@@ -147,28 +147,6 @@ World_Factbook_Clustering/
 
 ---
 
-# 🚀 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/zziibbaa/ML_Portfolio.git
-```
-
-Move to the project directory:
-
-```bash
-cd ML_Portfolio/Machine_Learning/World_Factbook_Clustering
-```
-
-Install the required libraries:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
 # 📚 References
 
 - CIA World Factbook

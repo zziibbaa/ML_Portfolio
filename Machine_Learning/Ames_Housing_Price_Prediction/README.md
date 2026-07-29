@@ -109,7 +109,7 @@ The preprocessing stage includes:
 
 ---
 
-# 🤖 Model
+# 🤖 Model Architecture
 
 ## ElasticNet Regression
 
@@ -148,13 +148,10 @@ GridSearchCV
 
 ### Relative Performance
 
-```text
-RMSE ≈ 11.3%
+- RMSE represents approximately 11.3% of the average house price.
 
-of the average house price.
+- The average prediction error remains relatively small compared to the target variable, indicating that the model captures the underlying relationship between housing features and sale prices reasonably well.
 ```
-
-The prediction error represents approximately 11% of the average house price, indicating that the model captures the underlying patterns of the dataset reasonably well.
 
 ---
 
@@ -223,7 +220,7 @@ Ames_Housing_Price_Prediction/
 
 ---
 
-# 🛠 Technologies
+# 🛠 Technologies Used
 
 - Python
 - Pandas
@@ -240,26 +237,30 @@ Ames_Housing_Price_Prediction/
 
 # 📌 Key Findings
 
-- ElasticNet successfully captures the relationship between housing features and sale prices.
-- Hyperparameter tuning significantly improves model performance.
-- Residual analysis indicates stable model behavior.
-- The model achieves an RMSE of approximately 11% relative to the average house price.
+- ElasticNet successfully combines feature selection and regularization, making it well-suited for tabular regression problems.
 
+- Hyperparameter tuning using GridSearchCV improves the model's predictive performance and generalization capability.
+
+- Residual analysis suggests that prediction errors are reasonably centered around zero without major systematic bias.
+
+- The model achieves an RMSE of approximately 11.3% relative to the average house price, demonstrating good predictive performance on unseen data.
+
+- The project highlights the importance of data preprocessing, feature engineering and model evaluation when developing regression pipelines.
 ---
 
 # 👩‍💻 Author
 
 ### Ziba Hatamian
 
-Junior Machine Learning Engineer
+Junior Machine Learning Engineer | Machine Learning • Deep Learning • MLOps
 
 #### Areas of Interest
 
 - Machine Learning
 - Deep Learning
+- Computer Vision
 - MLOps
-- Data Science
-- AI for Healthcare
+- AI Applications
 
 GitHub:
 

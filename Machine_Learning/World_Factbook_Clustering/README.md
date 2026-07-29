@@ -1,96 +1,72 @@
-# 🌍 World Factbook Country Clustering using K-Means
+# 🌍 World Factbook Clustering using KMeans
 
-An unsupervised Machine Learning project that applies K-Means clustering to identify groups of countries with similar demographic, economic, and social characteristics.
+A Machine Learning project that applies unsupervised learning techniques to explore similarities among countries using demographic, economic, and social indicators from the World Factbook dataset.
 
-The project includes Exploratory Data Analysis (EDA), data preprocessing, feature scaling, cluster analysis, and country segmentation using the Elbow Method to determine the optimal number of clusters.
+The project demonstrates the complete clustering workflow including data preprocessing, exploratory data analysis (EDA), feature scaling, KMeans clustering, and Elbow Method analysis for selecting an appropriate number of clusters.
 
 ---
 
 # 🚀 Project Highlights
 
 - Exploratory Data Analysis (EDA)
-- Missing Value Handling
-- Feature Scaling
-- K-Means Clustering
+- Data Cleaning and Missing Value Handling
+- Feature Scaling and Normalization
+- KMeans Clustering
 - Elbow Method (SSD Analysis)
-- Country Segmentation
-- Cluster Interpretation
-- Data Visualization
-- Comparative Analysis of Countries
+- Cluster Visualization
+- Unsupervised Learning Workflow
 
 ---
 
 # 🔄 Project Workflow
 
 ```text
-                World Factbook Dataset
-                           │
-                           ▼
-                     Data Cleaning
-                           │
-                           ▼
-                Exploratory Data Analysis
-                           │
-                           ▼
+            World Factbook Dataset
+                       │
+                       ▼
+                  Data Cleaning
+                       │
+                       ▼
+               Exploratory Data Analysis
+                       │
+                       ▼
                  Missing Value Handling
-                           │
-                           ▼
-                     Feature Scaling
-                           │
-                           ▼
-                    K-Means Clustering
-                           │
-                           ▼
-                     SSD Analysis
-                      (Elbow Method)
-                           │
-                           ▼
-                Optimal Number of Clusters
-                           │
-                           ▼
-                      Cluster Analysis
-                           │
-                           ▼
-                  Country Group Identification
+                       │
+                       ▼
+                  Feature Scaling
+                       │
+                       ▼
+                 KMeans Clustering
+                       │
+                       ▼
+                 SSD Calculation
+                  (Elbow Method)
+                       │
+                       ▼
+               Cluster Visualization
+                       │
+                       ▼
+                 Model Evaluation
 ```
 
 ---
 
 # 📊 Dataset
 
-The project uses data derived from the CIA World Factbook.
+The project uses data derived from the World Factbook containing country-level information.
 
-The dataset contains demographic, economic, and social indicators describing countries around the world.
+Examples of features include:
 
-### Examples of Features
-
-- GDP
 - Population
+- GDP
 - Literacy Rate
 - Birth Rate
 - Death Rate
 - Internet Usage
-- Life Expectancy
-- Inflation Rate
-- Unemployment Rate
-- Other socioeconomic indicators
+- Economic Indicators
+- Social Indicators
 
-The objective of this project is to discover hidden patterns among countries rather than performing predictive modeling.
-
----
-
-# 🔍 Exploratory Data Analysis
-
-The following analyses were performed:
-
-- Missing value analysis
-- Distribution analysis of numerical variables
-- Correlation analysis
-- Outlier inspection
-- Country characteristic comparisons
-- Visualization of feature relationships
-
-EDA provides valuable insights into the similarities and differences among countries before clustering.
+The dataset provides an opportunity to explore similarities among countries using unsupervised learning techniques.
 
 ---
 
@@ -99,70 +75,51 @@ EDA provides valuable insights into the similarities and differences among count
 The preprocessing pipeline includes:
 
 - Handling missing values
-- Feature selection
-- Feature scaling
-- Preparing data for clustering analysis
+- Removing unnecessary columns
+- Exploratory Data Analysis
+- Feature normalization and scaling
+- Preparing numerical variables for clustering
 
-Since K-Means is distance-based, feature scaling plays an important role in improving clustering performance.
-
----
-
-# 🤖 Model
-
-## K-Means Clustering
-
-The K-Means algorithm was used to group countries with similar characteristics.
-
-The following steps were performed:
-
-- Training multiple K-Means models
-- Comparing SSD values
-- Applying the Elbow Method
-- Selecting the optimal number of clusters
-- Interpreting country groups
+Scaling was applied before KMeans since distance-based algorithms are sensitive to feature magnitudes.
 
 ---
 
-# 📈 Evaluation Method
+# 🤖 Clustering Model
 
-### Elbow Method
+## KMeans Clustering
 
-The Sum of Squared Distances (SSD) was used to determine the optimal number of clusters.
+The project uses:
 
-```text
-SSD
- │
- │\
- │ \
- │  \
- │   \
- │    \______
- │______________
-        K
-```
+- KMeans Clustering
+- SSD (Sum of Squared Distances)
+- Elbow Method
 
-The optimal number of clusters was selected by analyzing the point where the SSD reduction begins to stabilize.
+The Elbow Method was used to investigate suitable values for the number of clusters.
 
 ---
 
-# 📊 Results
+# 📈 Results
 
-### Optimal Number of Clusters
+The SSD curve suggests that approximately:
 
-- Number of Clusters: **15**
+> **15 clusters**
 
-The clustering model successfully identified multiple groups of countries sharing similar socioeconomic characteristics.
+provide a reasonable balance between model complexity and within-cluster variance.
+
+The clustering results illustrate that countries can be grouped based on similarities across multiple demographic and economic characteristics.
 
 ---
 
-# 📌 Key Findings
+# 📊 Exploratory Data Analysis
 
-The clustering results suggest that:
+EDA includes:
 
-- Countries can be grouped according to demographic and economic similarities.
-- Clustering reveals hidden relationships among socioeconomic indicators.
-- Countries within the same cluster tend to share common development characteristics.
-- The analysis may provide useful insights for comparative studies and policy analysis.
+- Distribution analysis of variables
+- Missing value analysis
+- Feature visualization
+- Correlation analysis of numerical variables
+
+These analyses provide insights into the structure of the dataset before applying clustering techniques.
 
 ---
 
@@ -170,11 +127,11 @@ The clustering results suggest that:
 
 ```text
 World_Factbook_Clustering/
-
 │
-├── World_Factbook.csv
-├── World_Factbook.ipynb
+├── data/
 ├── images/
+├── notebooks/
+├── World_Factbook.ipynb
 └── README.md
 ```
 
@@ -188,42 +145,52 @@ World_Factbook_Clustering/
 - Scikit-Learn
 - Matplotlib
 - Seaborn
-
-### Machine Learning Techniques
-
-- K-Means Clustering
-- Feature Scaling
-- Exploratory Data Analysis
-- Elbow Method
-- Cluster Analysis
+- KMeans Clustering
 
 ---
 
 # 🚀 Installation
 
-Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/zziibbaa/ML_Portfolio.git
 ```
 
-Move to the project directory
+Move to the project directory:
 
 ```bash
-cd Machine_Learning/World_Factbook_Clustering
+cd ML_Portfolio/Machine_Learning/World_Factbook_Clustering
 ```
 
-Install the required packages
+Install the required libraries:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the notebook
+---
 
-```bash
-jupyter notebook
-```
+# 📚 References
+
+- CIA World Factbook
+- Scikit-Learn Documentation
+- KMeans Clustering Documentation
+
+---
+
+# 🎯 Skills Demonstrated
+
+This project demonstrates:
+
+- Exploratory Data Analysis
+- Data Cleaning
+- Missing Value Handling
+- Feature Scaling
+- Unsupervised Learning
+- KMeans Clustering
+- Elbow Method Analysis
+- Data Visualization
 
 ---
 
@@ -231,18 +198,16 @@ jupyter notebook
 
 ### Ziba Hatamian
 
-M.Sc. in Biotechnology transitioning into Machine Learning and AI Engineering.
+Junior Machine Learning Engineer
 
-### Areas of Interest
+#### Areas of Interest
 
 - Machine Learning
 - Deep Learning
-- Data Science
+- Computer Vision
 - MLOps
-- AI for Healthcare
+- Data Science
 
 GitHub:
 
-```text
-https://github.com/zziibbaa
-```
+> https://github.com/zziibbaa

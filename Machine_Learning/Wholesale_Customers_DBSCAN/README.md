@@ -190,34 +190,6 @@ Wholesale_Customers_DBSCAN/
 
 ---
 
-# 🚀 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/zziibbaa/ML_Portfolio.git
-```
-
-Move to the project directory:
-
-```bash
-cd ML_Portfolio/Machine_Learning/Wholesale_Customers_DBSCAN
-```
-
-Install the required libraries:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the notebook:
-
-```bash
-jupyter notebook
-```
-
----
-
 # 📚 References
 
 - Wholesale Customers Dataset (UCI Machine Learning Repository)

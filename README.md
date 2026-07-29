@@ -18,13 +18,13 @@
 
 # ⭐ Portfolio Highlights
 
-- 12+ Machine Learning and Data Analysis Projects
-- End-to-End Machine Learning Deployment using FastAPI & Docker
+- 10+ Machine Learning, Deep Learning and Data Analysis Projects
+- End-to-End Machine Learning Deployment using FastAPI and Docker
 - Experiment Tracking with MLflow
-- Machine Learning and Deep Learning Projects with PyTorch
-- NLP, Clustering and Regression Applications
-- SQL and Data Analysis Projects
-- Continuous Learning in Computer Vision and MLOps
+- Machine Learning and Deep Learning Projects using PyTorch
+- NLP, Clustering, Classification and Regression Applications
+- SQL and Business Data Analysis Projects
+- Continuous Learning in Deep Learning, Computer Vision and MLOps
 
 ---
 
@@ -34,22 +34,25 @@ Hi, I'm **Ziba Hatamian**.
 
 I'm a **Junior Machine Learning Engineer** with a background in Biotechnology and a strong interest in building end-to-end Machine Learning systems.
 
-My projects focus on:
-
-- Machine Learning
-- Deep Learning
-- Natural Language Processing (NLP)
-- Model Deployment
-- MLOps
-- Data Analysis
+My projects focus on designing reproducible Machine Learning pipelines, building predictive models, deploying ML applications, and continuously expanding my knowledge of Deep Learning and MLOps technologies.
 
 I enjoy transforming data into deployable solutions using modern tools such as PyTorch, Scikit-Learn, FastAPI, Docker, and MLflow.
 
 ---
 
+# 🏆 Key Achievements
+
+- Built and deployed Machine Learning APIs using FastAPI and Docker
+- Implemented experiment tracking with MLflow
+- Developed NLP, Regression, Classification, and Clustering projects
+- Built Deep Learning models using PyTorch
+- Designed reusable preprocessing pipelines and model evaluation workflows
+
+---
+
 # ❤️ Featured End-to-End Project
 
-## Heart Disease Prediction
+## ❤️ Heart Disease Prediction (End-to-End MLOps Project)
 
 This project demonstrates the complete Machine Learning lifecycle including:
 
@@ -100,7 +103,7 @@ This project demonstrates the complete Machine Learning lifecycle including:
 
 - PyTorch
 - Feed Forward Neural Networks (FFN)
-- Convolutional Neural Networks (CNN)
+- Computer Vision (Learning)
 
 ### Data Analysis
 
@@ -134,17 +137,6 @@ This project demonstrates the complete Machine Learning lifecycle including:
 
 # 📂 Portfolio Projects
 
-
-## 📊 Exploratory Data Analysis
-
-| Project | Link |
-|---------|------|
-| 🎬 Fandango Ratings Analysis | [Open](Machine_Learning/Fandango_Ratings_Analysis/) |
-| 🌧 Rainfall Trends Analysis | [Open](Machine_Learning/Rainfall_Trends_Analysis/) |
-| 📺 Netflix Content Strategy Analysis | [Open](Machine_Learning/Netflix_Content_Strategy_Analysis/) |
-
----
-
 ## 🤖 Machine Learning
 
 | Project | Link |
@@ -152,6 +144,7 @@ This project demonstrates the complete Machine Learning lifecycle including:
 | 🏡 Ames Housing Price Prediction | [Open](Machine_Learning/Ames_Housing_Price_Prediction/) |
 | 🧬 Gene Expression Classification | [Open](Machine_Learning/Gene_Expression_Classification/) |
 | 🪨 Rock Density Regression | [Open](Machine_Learning/Rock_Density_Regression/) |
+| 📈 Advertising Sales Prediction | [Open](Machine_Learning/Advertising_Sales_Prediction_MLflow_FastAPI_Docker/) |
 
 ---
 
@@ -195,7 +188,7 @@ This project demonstrates the complete Machine Learning lifecycle including:
 
 | Project | Link |
 |---------|------|
-| 🏢 Northwind SQL Exercises | [Open](SQL_Project/NorthWind_Project/) |
+| 🏢 Northwind SQL Analysis Project | [Open](SQL_Project/NorthWind_Project/) |
 
 ---
 
@@ -203,11 +196,11 @@ This project demonstrates the complete Machine Learning lifecycle including:
 
 I'm currently expanding my knowledge in:
 
-- Deep Learning
-- Computer Vision
+- Computer Vision (CNNs)
 - Transfer Learning
-- MLOps
-- Transformer-based Models
+- Model Deployment and MLOps
+- Experiment Tracking with MLflow
+- Transformer-based Models (Planned)
 
 ---
 
@@ -231,11 +224,11 @@ Future projects in this portfolio will include:
 
 #### Email
 
-- <z.228hatamian@gmail.com>
+- z.228hatamian@gmail.com
 
 #### GitHub
 
-- https://github.com/zziibbaa
+- [GitHub Profile](https://github.com/zziibbaa)
 
 ---
 

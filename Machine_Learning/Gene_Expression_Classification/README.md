@@ -146,34 +146,6 @@ Gene_Expression_Classification/
 
 ---
 
-# 🚀 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/zziibbaa/ML_Portfolio.git
-```
-
-Move to the project directory:
-
-```bash
-cd ML_Portfolio/Machine_Learning/Gene_Expression_Classification
-```
-
-Install the required libraries:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the notebook:
-
-```bash
-jupyter notebook
-```
-
----
-
 # 🎯 Skills Demonstrated
 
 This project demonstrates:

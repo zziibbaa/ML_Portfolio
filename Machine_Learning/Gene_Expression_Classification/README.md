@@ -1,12 +1,12 @@
 # 🧬 Gene Expression Classification using K-Nearest Neighbors
 
-A Machine Learning project that applies the K-Nearest Neighbors (KNN) algorithm to classify gene expression data. The project demonstrates a complete machine learning workflow including data preprocessing, pipeline construction, hyperparameter tuning using GridSearchCV, and comprehensive model evaluation.
+A Machine Learning project that applies the K-Nearest Neighbors (KNN) algorithm to classify gene expression data. The project demonstrates a complete machine learning workflow including pipeline construction, hyperparameter tuning using GridSearchCV, and comprehensive model evaluation.
 
 ---
 
 # 🚀 Project Highlights
 
-- Exploratory Data Analysis (EDA)
+- Data Preprocessing
 - Scikit-Learn Pipeline Construction
 - K-Nearest Neighbors (KNN) Classification
 - Hyperparameter Tuning using GridSearchCV
@@ -24,10 +24,7 @@ A Machine Learning project that applies the K-Nearest Neighbors (KNN) algorithm 
                  Gene Expression Dataset
                             │
                             ▼
-                    Data Exploration
-                            │
-                            ▼
-                     Data Preprocessing
+                    Data Preprocessing
                             │
                             ▼
                    StandardScaler Pipeline
@@ -64,7 +61,6 @@ The goal of the project is to classify samples into two classes based on gene ex
 
 The preprocessing pipeline includes:
 
-- Exploratory Data Analysis (EDA)
 - Train-Test Split
 - Feature Standardization using StandardScaler
 - Scikit-Learn Pipeline Construction
@@ -182,7 +178,6 @@ jupyter notebook
 
 This project demonstrates:
 
-- Exploratory Data Analysis
 - Data Preprocessing
 - Scikit-Learn Pipelines
 - Hyperparameter Tuning

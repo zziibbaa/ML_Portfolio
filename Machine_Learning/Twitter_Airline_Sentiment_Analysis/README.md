@@ -1,110 +1,296 @@
-# 💬 Sentiment Analysis Projects
+# ✈️ Twitter Airline Sentiment Analysis
 
-این پوشه شامل دو پروژه مجزا در زمینه تحلیل احساسات متنی با استفاده از الگوریتم‌های یادگیری ماشین است:
+A Natural Language Processing (NLP) project for multi-class sentiment classification of customer tweets about U.S. airlines. The goal of this project is to analyze customer opinions and automatically classify tweets into three sentiment categories: **positive**, **neutral**, and **negative**.
 
-1. ✈️ تحلیل احساسات توییتر خطوط هوایی  
-2. 🎬 تحلیل احساسات نظرات فیلم‌ها (IMDB)
-
----
-
-## ✈️ Twitter Airline Sentiment Analysis
-
-### 🎯 هدف پروژه  
-دسته‌بندی توییت‌های کاربران درباره خطوط هوایی به سه کلاس احساسات: **مثبت**، **منفی** و **خنثی**.
-
-### 📊 دیتاست  
-- **منبع:** [Crowdflower Twitter Airline Sentiment](https://www.kaggle.com/crowdflower/twitter-airline-sentiment)  
-- **فرمت:** CSV  
-- **کلاس‌ها:** `positive`, `neutral`, `negative`
-
-### 🧹 پیش‌پردازش داده‌ها  
-- حذف URL، منشن‌ها، علائم نگارشی  
-- حذف stopwords  
-- تبدیل متن به ویژگی عددی با `TfidfVectorizer`
-
-### 🤖 استفاده از مدل‌های مختلف و ارزیابی مقدار پارامترهای مختلف دقت و صحت و حساسیت 
-- ✅ **Multinomial Naive Bayes**  
-- ✅ **Logistic Regression**  
-- ✅ **Linear Support Vector Classification (LinearSVC)**
-
-### 📈 ارزیابی عملکرد  
-- 📊 **Accuracy**  
-- 📊 **Precision / Recall / F1-score**  
-- 📊 **Confusion Matrix**  
-- 📊 **Cross-validation**
-
-  ### اگر صرفا هدف شناسایی توییت های منفی و بهبود عملکرد شرکت های هوایی باشد بهترین مدل MultinomialNB هست اما اگر هدف ساخت مدل با Precision / Recall / F1-score بالا برای تمامی سه دسته احساسات **مثبت**، **منفی** و **خنثی** باشد مدل LinearSVC بهترین عملکرد را ارائه می دهد 
+The project demonstrates an end-to-end Machine Learning workflow including text preprocessing, TF-IDF feature extraction, model comparison, and sentiment prediction on unseen tweets.
 
 ---
 
-## 🎬 IMDB Movie Review Sentiment Analysis
+# 🚀 Project Highlights
 
-### 🎯 هدف پروژه 
+- Multi-class sentiment classification (Positive, Neutral, Negative)
+- Text preprocessing and cleaning pipeline
+- TF-IDF feature extraction
+- Comparison of three Machine Learning models
+- Cross-validation based evaluation
+- Precision, Recall and F1-score analysis
+- Confusion Matrix evaluation
+- Prediction on unseen tweets
+- Analysis of model trade-offs for different business objectives
 
-# تحلیل احساسات نظرات فیلم‌ها
+---
 
-این پروژه یک سیستم تحلیل احساسات (Sentiment Analysis) برای نظرات فیلم‌ها پیاده‌سازی می‌کند که قادر است نظرات را به دو دسته مثبت (pos) و منفی (neg) طبقه‌بندی کند.
+# 📊 Dataset
 
-## 📊 مجموعه داده
+**Twitter US Airline Sentiment Dataset**
 
-این پروژه از مجموعه داده نظرات فیلم‌ها از منبع زیر استفاده می‌کند:
-http://ai.stanford.edu/~amaas/data/sentiment
+- Source: https://www.kaggle.com/crowdflower/twitter-airline-sentiment
+- Format: CSV
+- Target Classes:
+    - Positive
+    - Neutral
+    - Negative
 
-مجموعه داده شامل 2000 نظر است که پس از پاک‌سازی داده‌ها، 1938 نظر معتبر باقی می‌ماند.
+The dataset contains customer tweets discussing their experiences with major U.S. airlines.
 
-## 🛠️ فناوری‌های مورد استفاده
+---
 
-- **Python 3**
-- **NumPy**: برای محاسبات عددی
-- **Pandas**: برای پردازش و تحلیل داده‌ها
-- **Matplotlib & Seaborn**: برای مصورسازی داده‌ها
-- **Scikit-learn**: برای پیاده‌سازی مدل‌های یادگیری ماشین
+# 🔄 Project Workflow
 
-## 📋 مراحل پروژه
+```text
+                 Raw Tweets
+                      │
+                      ▼
+                Data Cleaning
+                      │
+                      ▼
+               Text Preprocessing
+                      │
+                      ▼
+                TF-IDF Encoding
+                      │
+                      ▼
+               Train/Test Split
+                      │
+                      ▼
+        --------------------------------------
+        │                  │                 │
+        ▼                  ▼                 ▼
+   Naive Bayes      Logistic Regression     LinearSVC
+        │                  │                 │
+        --------------------------------------
+                           │
+                           ▼
+                    Model Evaluation
+          (Accuracy • Precision • Recall • F1)
+                           │
+                           ▼
+                     Prediction Pipeline
+                           │
+                           ▼
+                   New Tweet Prediction
+```
 
-### 1. بارگذاری و بررسی داده‌ها
-- بارگذاری داده‌ها از فایل CSV
-- بررسی ساختار داده‌ها و اطلاعات اولیه
-- شناسایی مقادیر (NaN) و حذف آن‌ها
+---
 
-### 2. پاک‌سازی داده‌ها
-- حذف نظرات خالی (فقط شامل فاصله)
-- بررسی توزیع برچسب‌ها (969 نظر منفی و 969 نظر مثبت)
+# 🧹 Data Preprocessing
 
-### 3. تحلیل اکتشافی داده‌ها (EDA)
-- شناسایی پرتکرارترین کلمات در نظرات منفی و مثبت
-- استفاده از CountVectorizer برای تحلیل فراوانی کلمات
+The preprocessing pipeline includes:
 
-### 4. تقسیم داده‌ها
-- تقسیم داده‌ها به مجموعه آموزش و آزمون (80% آموزش، 20% آزمون)
+- Removing URLs
+- Removing punctuation marks
+- Removing user mentions
+- Removing stopwords
+- Converting raw text into numerical representations using TF-IDF
 
-### 5. پیاده‌سازی مدل‌ها
+Feature extraction is performed using:
 
-#### 1) مدل (MultinomialNB)
-- استفاده از TfidfVectorizer برای استخراج ویژگی‌ها
-- دقت: 81%
+```python
+TfidfVectorizer()
+```
 
-#### 2) مدل (LinearSVC)
-- استفاده از TfidfVectorizer برای استخراج ویژگی‌ها
-- دقت: 83%
+---
 
-## 📈 نتایج
+# 🤖 Models
 
-### مدل Naive Bayes:
-- دقت کلی: 81%
-- precision برای نظرات منفی: 75%
-- recall برای نظرات منفی: 92%
-- precision برای نظرات مثبت: 90%
-- recall برای نظرات مثبت: 70%
+Three Machine Learning models were implemented and compared.
 
-### مدل LinearSVC:
-- دقت کلی: 83%
-- precision برای نظرات منفی: 81%
-- recall برای نظرات منفی: 86%
-- precision برای نظرات مثبت: 85%
-- recall برای نظرات مثبت: 81%
+### Multinomial Naive Bayes
 
+```python
+MultinomialNB()
+```
 
-## 📝 نتیجه‌گیری
+### Logistic Regression
 
-مدل LinearSVC با دقت 83% عملکرد بهتری نسبت به مدل Naive Bayes با دقت 81% نشان داد. هر دو مدل قادر به طبقه‌بندی نظرات فیلم‌ها با دقت قابل قبولی هستند و می‌توانند برای تحلیل خودکار احساسات مورد استفاده قرار گیرند.
+```python
+LogisticRegression()
+```
+
+### Linear Support Vector Classification
+
+```python
+LinearSVC()
+```
+
+---
+
+# 📈 Model Performance
+
+## Multinomial Naive Bayes
+
+| Metric | Score |
+|--------|------|
+| Accuracy | 0.67 |
+| Precision (Negative) | 0.66 |
+| Recall (Negative) | **0.99** |
+| F1-score (Negative) | 0.79 |
+| Macro Average F1-score | 0.43 |
+
+```text
+              precision    recall    f1-score
+
+negative          0.66      0.99       0.79
+neutral           0.79      0.15       0.26
+positive          0.89      0.14       0.24
+
+accuracy                               0.67
+```
+
+---
+
+## Logistic Regression
+
+| Metric | Score |
+|--------|------|
+| Accuracy | 0.77 |
+| Precision (Negative) | 0.80 |
+| Recall (Negative) | 0.93 |
+| F1-score (Negative) | 0.86 |
+| Macro Average F1-score | 0.69 |
+
+```text
+              precision    recall    f1-score
+
+negative          0.80      0.93       0.86
+neutral           0.63      0.47       0.54
+positive          0.81      0.58       0.68
+
+accuracy                               0.77
+```
+
+---
+
+## LinearSVC
+
+| Metric | Score |
+|--------|------|
+| Accuracy | 0.77 |
+| Precision (Negative) | 0.82 |
+| Recall (Negative) | 0.89 |
+| F1-score (Negative) | 0.86 |
+| Macro Average F1-score | **0.70** |
+
+```text
+              precision    recall    f1-score
+
+negative          0.82      0.89       0.86
+neutral           0.59      0.52       0.55
+positive          0.76      0.64       0.69
+
+accuracy                               0.77
+```
+
+---
+
+# 📌 Key Findings
+
+The results indicate that different models exhibit different strengths.
+
+- Multinomial Naive Bayes achieved an exceptionally high Recall (99%) for negative tweets, making it particularly useful for customer complaint detection.
+
+- Logistic Regression demonstrated balanced performance across all three sentiment classes while maintaining high overall accuracy.
+
+- LinearSVC achieved the highest Macro F1-score among the evaluated models and provided competitive performance across all sentiment categories.
+
+- The choice of the best model depends on the business objective:
+    - If detecting dissatisfied customers is the primary goal, Multinomial Naive Bayes is highly effective.
+    - If balanced multi-class sentiment classification is required, Logistic Regression and LinearSVC provide superior performance.
+
+---
+
+# 🔮 Prediction Example
+
+A prediction pipeline was created using TF-IDF and LinearSVC.
+
+```python
+pipe = Pipeline([
+    ('tfidf',TfidfVectorizer()),
+    ('svc_model',LinearSVC(dual='auto'))
+])
+
+pipe.fit(df['text'],df['airline_sentiment'])
+```
+
+Predicting the sentiment of a new tweet:
+
+```python
+new_tweet = ['good flight']
+
+pipe.predict(new_tweet)
+```
+
+Example output:
+
+```python
+['positive']
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+Twitter_Airline_Sentiment_Analysis
+│
+├── Twitter_Airline_Sentiment.ipynb
+├── images/
+├── dataset/
+├── README.md
+│
+└── Prediction Pipeline
+        │
+        ├── TF-IDF Vectorizer
+        └── LinearSVC Model
+```
+
+> The exact project structure may vary depending on future improvements.
+
+---
+
+# 🛠 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-Learn
+- TfidfVectorizer
+- Multinomial Naive Bayes
+- Logistic Regression
+- LinearSVC
+- Matplotlib
+- Seaborn
+
+---
+
+# 🚀 Future Improvements
+
+Possible extensions for this project include:
+
+- Hyperparameter tuning using GridSearchCV.
+- Transformer-based sentiment classification models.
+- Deployment using FastAPI.
+- Real-time Twitter sentiment prediction APIs.
+- Visualization dashboards for airline sentiment monitoring.
+
+---
+
+# 👩‍💻 Author
+
+### Ziba Hatamian
+
+M.Sc. in Biotechnology transitioning into Machine Learning and AI Engineering.
+
+#### Areas of Interest
+
+- Machine Learning
+- Deep Learning
+- Natural Language Processing
+- MLOps
+- Model Deployment
+
+GitHub:
+
+```text
+https://github.com/zziibbaa
+```

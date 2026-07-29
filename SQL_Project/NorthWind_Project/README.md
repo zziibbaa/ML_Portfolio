@@ -176,28 +176,6 @@ SQL_Project/
 
 ---
 
-# 🚀 Installation
-
-Clone the repository together with its submodules:
-
-```bash
-git clone --recurse-submodules <repository-url>
-```
-
-or initialize the submodule manually:
-
-```bash
-git submodule update --init --recursive
-```
-
-Open the SQL script using SQL Server Management Studio and execute the queries.
-
-```text
-Exercise.sql
-```
-
----
-
 # 📌 Key Findings
 
 This project demonstrates how SQL can be used for both database querying and business analytics.

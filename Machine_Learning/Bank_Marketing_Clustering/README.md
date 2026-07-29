@@ -177,7 +177,6 @@ Bank_Marketing_Clustering/
 │
 ├── Bank.csv
 ├── Bank_Marketing.ipynb
-├── images/
 └── README.md
 ```
 

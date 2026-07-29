@@ -16,7 +16,6 @@ The project includes Exploratory Data Analysis (EDA), data preprocessing, featur
 - K-Means Clustering
 - Elbow Method (SSD Analysis)
 - Customer Segmentation
-- Cluster Interpretation and Business Insights
 - Data Visualization
 
 ---
@@ -154,7 +153,9 @@ The optimal number of clusters was selected based on the point where the decreas
 
 - Number of Clusters: **6**
 
-The model successfully identified six distinct customer groups with different behavioral characteristics.
+The Elbow Method indicates that six clusters provide a reasonable trade-off between model simplicity and within-cluster similarity.
+
+The clustering process successfully segmented customers into six groups with different behavioral characteristics.
 
 ---
 
@@ -201,41 +202,13 @@ Bank_Marketing_Clustering/
 
 ---
 
-# 🚀 Installation
-
-Clone the repository
-
-```bash
-git clone https://github.com/zziibbaa/ML_Portfolio.git
-```
-
-Move to the project directory
-
-```bash
-cd Machine_Learning/Bank_Marketing_Clustering
-```
-
-Install the required packages
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the notebook
-
-```bash
-jupyter notebook
-```
-
----
-
 # 👩‍💻 Author
 
 ### Ziba Hatamian
 
-M.Sc. in Biotechnology transitioning into Machine Learning and AI Engineering.
+Junior Machine Learning Engineer
 
-### Areas of Interest
+#### Areas of Interest
 
 - Machine Learning
 - Deep Learning
@@ -243,6 +216,9 @@ M.Sc. in Biotechnology transitioning into Machine Learning and AI Engineering.
 - Data Science
 - AI for Healthcare
 
+GitHub
+
+> https://github.com/zziibbaa
 GitHub:
 
 ```text

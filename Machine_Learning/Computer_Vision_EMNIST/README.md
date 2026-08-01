@@ -71,9 +71,9 @@ https://www.nist.gov/itl/products-and-services/emnist-dataset
 
 EMNIST/
 
-│  
+ │  
 ├── README.md  
-│  
+ │  
 ├── main.py  
 ├── data.py  
 ├── model.py  
@@ -81,9 +81,9 @@ EMNIST/
 ├── evaluate.py  
 ├── Architecture_Model.py  
 ├── augmentate.py  
-│  
+ │  
 ├── EMNIST_CNN_Experiments.ipynb  
-│  
+ │  
 ├── requirements.txt    
 └── images/  
 

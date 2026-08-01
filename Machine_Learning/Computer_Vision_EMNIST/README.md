@@ -87,8 +87,8 @@ EMNIST/
 ├── requirements.txt  
 │  
 └── images/  
-&nbsp;&nbsp;&nbsp;&nbsp;├── BEST_MODEL_confusion_matrix.jpg 
-&nbsp;&nbsp;&nbsp;&nbsp;└── BEST_MODEL_classification_report.jpg 
+&nbsp;&nbsp;&nbsp;├── BEST_MODEL_confusion_matrix.jpg 
+&nbsp;&nbsp;&nbsp;└── BEST_MODEL_classification_report.jpg 
 
 ---
 
@@ -255,12 +255,12 @@ Evaluation includes:
 
 ## Classification Report
 
-![Classification Report](images/classification_report.png)
+![Classification Report](images/BEST_MODEL_classification_report_plot.jpg)
 
 
 ## Confusion Matrix
 
-![Confusion Matrix](images/confusion_matrix.png)
+![Confusion Matrix](images/BEST_MODEL_confusion_matrix.jpg)
 
 ---
 

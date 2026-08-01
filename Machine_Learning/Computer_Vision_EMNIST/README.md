@@ -84,11 +84,9 @@ EMNIST/
 │  
 ├── EMNIST_CNN_Experiments.ipynb  
 │  
-├── requirements.txt  
-│  
+├── requirements.txt    
 └── images/  
-&nbsp;&nbsp;&nbsp;├── BEST_MODEL_confusion_matrix.jpg 
-&nbsp;&nbsp;&nbsp;└── BEST_MODEL_classification_report.jpg 
+
 
 ---
 

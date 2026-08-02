@@ -16,15 +16,6 @@
 
 ---
 
-<p align="center">
-
-# 🚀 End-to-End Machine Learning & Deep Learning Portfolio
-
-### Machine Learning • Deep Learning • Computer Vision • NLP • MLOps
-
-</p>
-
-
 # ⭐ Portfolio Highlights
 
 This repository showcases my journey toward becoming a Machine Learning Engineer by building complete, reproducible Machine Learning and Deep Learning projects.

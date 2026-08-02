@@ -252,7 +252,7 @@ Evaluation includes:
 
 ## Losses & Accuracy
 
-![Losses & Accuracy](images/BEST_MODEL_Loss & Accuracy.jpg)
+![Losses & Accuracy](images/BEST_MODEL_Loss_Accuracy.jpg)
 
 ## Classification Report
 

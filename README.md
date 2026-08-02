@@ -62,10 +62,10 @@ This repository showcases my journey toward becoming a Machine Learning Engineer
 
 | Category | Projects |
 |----------|---------:|
-| 🤖 Machine Learning | 4 |
+| 🤖 Machine Learning | 5 |
 | 🧠 Deep Learning | 2 |
 | 💬 NLP | 2 |
-| 🌀 Clustering | 3 |
+| 🌀 Clustering | 2 |
 | 🚀 Deployment & MLOps | 1 |
 | 🗄 SQL | 1 |
 

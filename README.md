@@ -90,7 +90,7 @@ Complete Machine Learning lifecycle:
 
 Data → Training → MLflow → FastAPI → Docker
 
-or
+
 
 🥈 **EMNIST Letters Classification**
 

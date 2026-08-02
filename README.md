@@ -1,30 +1,84 @@
-# 🚀 Machine Learning Portfolio
+# 🚀 End-to-End Machine Learning & Deep Learning Portfolio
 
-> **Machine Learning • Deep Learning • NLP • MLOps • SQL • Data Analysis**
+> **Machine Learning • Deep Learning • Computer Vision • NLP • MLOps • Deployment**
 
 <p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-MachineLearning-orange)
 ![PyTorch](https://img.shields.io/badge/PyTorch-DeepLearning-red)
-![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
+![FastAPI](https://img.shields.io/badge/FastAPI-REST_API-green)
 ![Docker](https://img.shields.io/badge/Docker-Deployment-blue)
-![MLflow](https://img.shields.io/badge/MLflow-Experiment%20Tracking-purple)
+![MLflow](https://img.shields.io/badge/MLflow-Experiment_Tracking-purple)
 ![SQL](https://img.shields.io/badge/SQL-Database-lightgrey)
 
 </p>
 
 ---
 
+<p align="center">
+
+# 🚀 End-to-End Machine Learning & Deep Learning Portfolio
+
+### Machine Learning • Deep Learning • Computer Vision • NLP • MLOps
+
+</p>
+
+
 # ⭐ Portfolio Highlights
 
-- 10+ Machine Learning, Deep Learning and Data Analysis Projects
-- End-to-End Machine Learning Deployment using FastAPI and Docker
-- Experiment Tracking with MLflow
-- Machine Learning and Deep Learning Projects using PyTorch
-- NLP, Clustering, Classification and Regression Applications
-- SQL and Business Data Analysis Projects
-- Continuous Learning in Deep Learning, Computer Vision and MLOps
+This repository showcases my journey toward becoming a Machine Learning Engineer by building complete, reproducible Machine Learning and Deep Learning projects.
+
+### Highlights
+
+- 🤖 **13 End-to-End AI Projects**
+- 🧠 Computer Vision using PyTorch
+- 💬 Natural Language Processing
+- 🚀 FastAPI & Docker Deployment
+- 📊 Experiment Tracking with MLflow
+- 🛠 Modular & Reusable ML Pipelines
+- 📈 Systematic Model Optimization & Error Analysis
+
+# 📌 Portfolio Overview
+
+```text
+📂 ML_Portfolio
+
+├── 🤖 Machine Learning
+│   ├── Classification
+│   ├── Regression
+│   ├── Clustering
+│   └── Feature Engineering
+│
+├── 🧠 Deep Learning
+│   ├── Feed Forward Networks
+│   ├── Computer Vision (CNN)
+│   └── PyTorch Projects
+│
+├── 💬 Natural Language Processing
+│
+├── 🚀 Deployment & MLOps
+│   ├── FastAPI
+│   ├── Docker
+│   └── MLflow
+│
+└── 🗄 SQL Analytics
+```
+
+---
+
+# 📊 Portfolio Statistics
+
+| Category | Projects |
+|----------|---------:|
+| 🤖 Machine Learning | 4 |
+| 🧠 Deep Learning | 2 |
+| 💬 NLP | 2 |
+| 🌀 Clustering | 3 |
+| 🚀 Deployment & MLOps | 1 |
+| 🗄 SQL | 1 |
+
+**Total Independent Projects: 13**
 
 ---
 
@@ -32,63 +86,88 @@
 
 Hi, I'm **Ziba Hatamian**.
 
-I'm a **Junior Machine Learning Engineer** with a background in Biotechnology and a strong interest in building end-to-end Machine Learning systems.
-
-My projects focus on designing reproducible Machine Learning pipelines, building predictive models, deploying ML applications, and continuously expanding my knowledge of Deep Learning and MLOps technologies.
-
-I enjoy transforming data into deployable solutions using modern tools such as PyTorch, Scikit-Learn, FastAPI, Docker, and MLflow.
+Machine Learning Engineer focused on building reproducible AI systems, modular Deep Learning pipelines, and production-ready Machine Learning applications.
 
 ---
+# 🏅 Best Project
 
-# 🏆 Key Achievements
+If you're visiting this portfolio for the first time, I recommend starting with:
 
-- Built and deployed Machine Learning APIs using FastAPI and Docker
-- Implemented experiment tracking with MLflow
-- Developed NLP, Regression, Classification, and Clustering projects
-- Built Deep Learning models using PyTorch
-- Designed reusable preprocessing pipelines and model evaluation workflows
+🥇 **Heart Disease Prediction (End-to-End MLOps)**
 
----
+Complete Machine Learning lifecycle:
 
-# ❤️ Featured End-to-End Project
+Data → Training → MLflow → FastAPI → Docker
 
-## ❤️ Heart Disease Prediction (End-to-End MLOps Project)
+or
 
-This project demonstrates the complete Machine Learning lifecycle including:
+🥈 **EMNIST Letters Classification**
 
-- Data preprocessing pipelines
-- Logistic Regression baseline modeling
+A modular Computer Vision pipeline built entirely with PyTorch, featuring extensive experimentation with CNN architectures, optimizers, schedulers, and data augmentation techniques.
+
+# 🏆 Featured Projects
+
+## ❤️ Heart Disease Prediction (End-to-End MLOps)
+
+A complete Machine Learning project covering the entire workflow:
+
+- Data preprocessing pipeline
+- Logistic Regression baseline
 - PyTorch Feed Forward Neural Network
-- Validation-based threshold optimization
-- Experiment tracking with MLflow
-- REST API development using FastAPI
-- Docker containerization and deployment
-- Model evaluation and comparison
+- Threshold optimization
+- MLflow experiment tracking
+- FastAPI REST API
+- Docker deployment
 
-#### Technologies
+**Technologies**
 
 - PyTorch
 - Scikit-Learn
 - FastAPI
 - Docker
 - MLflow
-- Joblib
-- Pydantic
 
-#### Project Link
+📂 Project
 
-> **[Open Project](Machine_Learning/Heart_Disease_End_to_End/)**
+> [Machine_Learning/Heart_Disease_End_to_End/](Machine_Learning/Heart_Disease_End_to_End/)
+
+---
+
+## 🔤 EMNIST Letters Classification (Computer Vision)
+
+A modular Computer Vision project for handwritten letter recognition.
+
+Highlights
+
+- Custom CNN architecture
+- Modular PyTorch pipeline
+- AdamW optimizer
+- Learning-rate scheduler comparison
+- Data augmentation experiments
+- Comprehensive error analysis
+- **95.30% Test Accuracy**
+
+**Technologies**
+
+- PyTorch
+- TorchVision
+- CNN
+- Computer Vision
+
+📂 Project
+
+> [Deep_Learning/Computer_Vision_EMNIST/](Deep_Learning/Computer_Vision_EMNIST/)
 
 ---
 
 # 🧰 Technical Skills
 
-### Programming
+## Programming
 
 - Python
 - SQL
 
-### Machine Learning
+## Machine Learning
 
 - Scikit-Learn
 - Classification
@@ -96,42 +175,43 @@ This project demonstrates the complete Machine Learning lifecycle including:
 - Clustering
 - Feature Engineering
 - Cross Validation
-- Hyperparameter Tuning
+- Hyperparameter Optimization
 - Pipelines
 
-### Deep Learning
+## Deep Learning
 
 - PyTorch
-- Feed Forward Neural Networks (FFN)
-- Computer Vision (Learning)
+- Feed Forward Neural Networks
+- Convolutional Neural Networks
+- Computer Vision
 
-### Data Analysis
-
-- Pandas
-- NumPy
-- Matplotlib
-- Plotly
-
-### NLP
+## NLP
 
 - TF-IDF
 - Naive Bayes
 - Logistic Regression
 - Linear SVM
 
-### Deployment & MLOps
+## Data Analysis
+
+- Pandas
+- NumPy
+- Matplotlib
+- Plotly
+
+## Deployment & MLOps
 
 - FastAPI
-- Flask
 - Docker
 - MLflow
+- Flask
 
-### Tools
+## Development Tools
 
 - Git
 - GitHub
-- Jupyter Notebook
 - VS Code
+- Jupyter Notebook
 
 ---
 
@@ -139,96 +219,113 @@ This project demonstrates the complete Machine Learning lifecycle including:
 
 ## 🤖 Machine Learning
 
-| Project | Link |
-|---------|------|
-| 🏡 Ames Housing Price Prediction | [Open](Machine_Learning/Ames_Housing_Price_Prediction/) |
-| 🧬 Gene Expression Classification | [Open](Machine_Learning/Gene_Expression_Classification/) |
-| 🪨 Rock Density Regression | [Open](Machine_Learning/Rock_Density_Regression/) |
-| 📈 Advertising Sales Prediction | [Open](Machine_Learning/Advertising_Deployment/) |
+| Project | Description |
+|---------|-------------|
+| 🏡 Ames Housing Price Prediction | ElasticNet Regression |
+| 🧬 Gene Expression Classification | Multi-class Classification |
+| 🪨 Rock Density Regression | Regression |
+| 📈 Advertising Sales Prediction | End-to-End ML Deployment |
 
 ---
 
 ## 🧠 Deep Learning
 
-| Project | Link |
-|---------|------|
-| ❤️ Heart Disease Prediction (End-to-End) | [Open](Machine_Learning/Heart_Disease_End_to_End/) |
-| 🔤 EMNIST Character Classification *(Coming Soon)* | --- |
+| Project | Description |
+|---------|-------------|
+| ❤️ Heart Disease Prediction | End-to-End MLOps |
+| 🔤 EMNIST Letters Classification | Computer Vision (CNN) |
 
 ---
 
 ## 💬 Natural Language Processing
 
-| Project | Link |
-|---------|------|
-| ✈️ Twitter Airline Sentiment Analysis | [Open](Machine_Learning/Twitter_Airline_Sentiment_Analysis/) |
-| 🎬 IMDB Movie Review Sentiment Analysis | [Open](Machine_Learning/IMDB_Movie_Review_Sentiment_Analysis/) |
+| Project | Description |
+|---------|-------------|
+| ✈️ Twitter Airline Sentiment Analysis | Text Classification |
+| 🎬 IMDB Movie Review Sentiment Analysis | Sentiment Analysis |
 
 ---
 
 ## 🌀 Clustering
 
-| Project | Link |
-|---------|------|
-| 🏦 Bank Marketing Clustering | [Open](Machine_Learning/Bank_Marketing_Clustering/) |
-| 🌍 World Factbook Clustering | [Open](Machine_Learning/World_Factbook_Clustering/) |
-| 🛒 Wholesale Customers (DBSCAN) | [Open](Machine_Learning/Wholesale_Customers_DBSCAN/) |
+| Project | Description |
+|---------|-------------|
+| 🏦 Bank Marketing | K-Means |
+| 🌍 World Factbook | Hierarchical Clustering |
+| 🛒 Wholesale Customers | DBSCAN |
 
 ---
 
 ## 🚀 Deployment & MLOps
 
-| Project | Link |
-|---------|------|
-| 🚀 Advertising Sales Prediction (MLflow • FastAPI • Docker) | [Open](Machine_Learning/Advertising_Deployment/) |
+| Project | Description |
+|---------|-------------|
+| 🚀 Advertising Sales Prediction | FastAPI + Docker + MLflow |
+| ❤️ Heart Disease Prediction | Complete ML Deployment |
 
 ---
 
 ## 🗄 SQL
 
-| Project | Link |
-|---------|------|
-| 🏢 Northwind SQL Analysis Project | [Open](SQL_Project/NorthWind_Project/) |
+| Project | Description |
+|---------|-------------|
+| 🏢 Northwind Business Analysis | SQL Analytics |
 
 ---
 
-# 🎯 Current Learning Journey
+# 🎯 Current Focus
 
-I'm currently expanding my knowledge in:
+I'm currently focusing on:
 
-- Computer Vision (CNNs)
+- Computer Vision
+- CNN Optimization
 - Transfer Learning
-- Model Deployment and MLOps
-- Experiment Tracking with MLflow
-- Transformer-based Models (Planned)
+- Model Deployment
+- MLOps
+- Experiment Tracking
 
 ---
 
 # 🛣 Learning Roadmap
 
-Future projects in this portfolio will include:
+Upcoming projects planned for this portfolio:
 
 - ResNet
+- EfficientNet
 - Vision Transformer (ViT)
 - YOLO
 - U-Net
 - Recommendation Systems
-- LSTM Networks
 - Time Series Forecasting
+- LSTM Networks
+- Transformer-based Models
+
+---
+
+# 📈 Repository Philosophy
+
+Rather than collecting isolated notebooks, this repository emphasizes:
+
+- Modular project organization
+- Reusable code
+- Clean software engineering practices
+- Reproducible experiments
+- Meaningful evaluation
+- End-to-end Machine Learning workflows
 
 ---
 
 # 📫 Contact
 
-### Ziba Hatamian
+## Ziba Hatamian
 
-#### Email
+📧 Email
 
-- z.228hatamian@gmail.com
+z.228hatamian@gmail.com
 
-#### GitHub
+🐙 GitHub
 
-- [GitHub Profile](https://github.com/zziibbaa)
+https://github.com/zziibbaa
 
 ---
 

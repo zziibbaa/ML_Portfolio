@@ -147,7 +147,7 @@ Highlights
 
 📂 Project
 
-> [Deep_Learning/Computer_Vision_EMNIST/](Deep_Learning/Computer_Vision_EMNIST/)
+> [Deep_Learning/Computer_Vision_EMNIST/](ِDeep_Learning/Computer_Vision_EMNIST/)
 
 ---
 

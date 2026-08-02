@@ -250,6 +250,9 @@ Evaluation includes:
 - Normalized Confusion Matrix
 - Misclassified Samples Analysis
 
+## Losses & Accuracy
+
+![Losses & Accuracy](images/BEST_MODEL_Loss & Accuracy.jpg)
 
 ## Classification Report
 
@@ -259,6 +262,11 @@ Evaluation includes:
 ## Confusion Matrix
 
 ![Confusion Matrix](images/BEST_MODEL_confusion_matrix.jpg)
+
+
+## False Predictions
+
+![False Predictions](images/BEST_MODEL_False_Prediction.jpg)
 
 ---
 

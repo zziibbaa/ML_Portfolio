@@ -1,13 +1,13 @@
 # 🔤 EMNIST Letters Classification using PyTorch CNN
 
-> **Deep Learning • Computer Vision • PyTorch • CNN • Model Optimization • Error Analysis**
+> **Deep Learning • Computer Vision • PyTorch • CNN • Data Augmentation • Model Optimization**
 
 <p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-DeepLearning-red)
 ![TorchVision](https://img.shields.io/badge/TorchVision-ComputerVision-orange)
-![Scikit--Learn](https://img.shields.io/badge/Scikit--Learn-Evaluation-green)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Evaluation-green)
 
 </p>
 
@@ -15,34 +15,26 @@
 
 # ⭐ Project Highlights
 
-- Developed a modular Convolutional Neural Network pipeline using PyTorch
-- Implemented configurable CNN architecture for multi-class image classification
-- Performed systematic experiments on:
-  - Network architecture
+- Built a complete handwritten character recognition pipeline using **PyTorch**
+- Designed a **fully modular deep learning project** (no notebook-only workflow)
+- Implemented a configurable CNN architecture supporting:
+  - Flexible network architecture
   - Optimizers
-  - Learning rate schedulers
-  - Data augmentation techniques
-- Achieved **95.30% test accuracy** on EMNIST Letters dataset
-- Performed detailed model evaluation using:
-  - Classification Report
-  - Confusion Matrix
-  - Misclassification Analysis
+  - Learning-rate schedulers
+  - Data augmentation
+- Conducted systematic experiments to optimize model performance
+- Achieved **95.30% Test Accuracy** on the EMNIST Letters dataset
+- Performed detailed error analysis to identify common character confusions
 
 ---
 
 # 📌 Project Overview
 
-This project focuses on building a handwritten character recognition system using a custom CNN architecture implemented with PyTorch.
+This project focuses on recognizing handwritten English letters using a custom Convolutional Neural Network (CNN).
 
-The goal was not only to train a high-performing classifier, but also to design a reusable deep learning pipeline that supports:
+Rather than training a single model, the project was designed as a reusable deep learning framework that makes experimentation easy. Every stage of the pipeline is separated into independent modules, allowing different architectures, optimizers, schedulers, and augmentation techniques to be tested with minimal code changes.
 
-- Flexible model configuration
-- Training experimentation
-- Optimization comparison
-- Data augmentation
-- Model evaluation and error analysis
-
-The complete workflow was implemented using modular Python scripts instead of a single notebook-based approach.
+The project emphasizes **clean software design**, **reproducibility**, and **systematic experimentation**, making it suitable as a portfolio project for computer vision and deep learning roles.
 
 ---
 
@@ -52,13 +44,12 @@ The complete workflow was implemented using modular Python scripts instead of a 
 
 The model was trained on the **EMNIST Letters** dataset.
 
-Dataset characteristics:
-
 | Property | Value |
-|---|---:|
-| Classes | 26 (A-Z) |
+|----------|------:|
+| Classes | 26 (A–Z) |
 | Image Type | Grayscale |
 | Image Size | 28 × 28 |
+| Samples | 145,600 |
 | Task | Multi-class Classification |
 
 Dataset source:
@@ -69,127 +60,136 @@ https://www.nist.gov/itl/products-and-services/emnist-dataset
 
 # 🏗 Project Structure
 
+```text
 EMNIST/
-
-│  
-├── README.md  
-│  
-├── main.py  
-├── data.py  
-├── model.py  
-├── train_model.py  
-├── evaluate.py  
-├── Architecture_Model.py  
-├── augmentate.py  
-│  
-├── EMNIST_CNN_Experiments.ipynb  
-│  
-├── requirements.txt    
-└── images/  
-
+│
+├── README.md
+├── main.py
+├── data.py
+├── model.py
+├── train_model.py
+├── evaluate.py
+├── Architecture_Model.py
+├── augmentate.py
+│
+├── EMNIST_CNN_Experiments.ipynb
+├── requirements.txt
+│
+└── images/
+```
 
 ---
 
-# 🔄 Deep Learning Pipeline
+# 🔄 Training Pipeline
 
-The project workflow:
-
-Dataset Loading
-
-↓
-
+```text
+Load Dataset
+      │
+      ▼
 Custom PyTorch Dataset
-
-↓
-
+      │
+      ▼
 Data Augmentation
-
-↓
-
-CNN Model Training
-
-↓
-
-Optimizer & Scheduler Experiments
-
-↓
-
+      │
+      ▼
+CNN Model
+      │
+      ▼
+Optimizer
+      │
+      ▼
+Learning Rate Scheduler
+      │
+      ▼
+Training
+      │
+      ▼
 Evaluation
-
-↓
-
+      │
+      ▼
 Error Analysis
+```
 
 ---
 
 # 🧠 CNN Architecture
 
-The implemented CNN architecture consists of three convolutional blocks followed by fully connected layers.
+The final network consists of **three convolutional blocks** followed by two fully connected layers.
 
-Input  
+```text
+Input
 (1 × 28 × 28)
 
-↓
+        │
+        ▼
 
-Conv2D  
-BatchNorm  
-LeakyReLU  
-Dropout2D  
+Conv2D
+BatchNorm
+LeakyReLU
+Dropout2D
 MaxPooling
 
-↓
+        │
+        ▼
 
-Conv2D  
-BatchNorm  
-LeakyReLU  
-Dropout2D  
+Conv2D
+BatchNorm
+LeakyReLU
+Dropout2D
 MaxPooling
 
-↓
+        │
+        ▼
 
-Conv2D  
-BatchNorm  
-LeakyReLU  
-Dropout2D  
+Conv2D
+BatchNorm
+LeakyReLU
+Dropout2D
 MaxPooling
 
-↓
+        │
+        ▼
 
 Flatten
 
-↓
+        │
+        ▼
 
-Fully Connected Layers
+Fully Connected
 
-↓
+        │
+        ▼
 
-Output  
-(26 Classes)
+Fully Connected
+
+        │
+        ▼
+
+Output (26 Classes)
+```
 
 ---
 
-## Final Model Configuration
-
-The best performing configuration:
+# ⚙️ Best Model Configuration
 
 | Parameter | Value |
-|---|---:|
-| Conv Channels | (64,128,256) |
-| Kernel Size | 7×7 |
+|-----------|------:|
+| Conv Channels | (64, 128, 256) |
+| Kernel Size | 7 × 7 |
 | Padding | 3 |
 | Activation | LeakyReLU |
-| Batch Normalization | Yes |
-| Dropout2D | 0.1 |
-| Fully Connected Dropout | 0.4 |
-| Hidden Units | (128,64) |
+| Batch Normalization | ✔ |
+| Dropout2D | 0.10 |
+| FC Dropout | 0.40 |
+| Hidden Units | (128, 64) |
 | Loss Function | CrossEntropyLoss |
 
 ---
 
-# ⚙️ Training Configuration
+# 🚀 Training Configuration
 
 | Parameter | Value |
-|---|---:|
+|-----------|------:|
 | Optimizer | AdamW |
 | Weight Decay | 1e-4 |
 | Scheduler | CosineAnnealingLR |
@@ -198,73 +198,79 @@ The best performing configuration:
 
 ---
 
-# 🧪 Experiments & Optimization
+# 🧪 Experiments
 
-Several experiments were performed to understand the impact of different training strategies.
+Multiple experiments were performed to understand how different components affect performance.
 
 | Experiment | Test Accuracy |
-|---|---:|
+|------------|--------------:|
 | Baseline CNN | 93.46% |
-| BatchNorm + Dropout | 94.52% |
-| AdamW Optimizer | 94.50% |
-| StepLR Scheduler | 94.68% |
-| CosineAnnealingLR | 94.87% |
+| + BatchNorm & Dropout | 94.52% |
+| + AdamW | 94.50% |
+| + StepLR | 94.68% |
+| + CosineAnnealingLR | 94.87% |
 | Kernel Size = 5 | 95.06% |
 | Kernel Size = 7 | 95.14% |
-| OneCycleLR | 94.99% |
-| RandomRotation (10°) | **95.30%** |
-| RandomAffine | 95.00% |
+| + OneCycleLR | 94.99% |
+| + RandomRotation (10°) | **95.30%** |
+| + RandomAffine | 95.00% |
 | Rotation + RandomErasing | 94.88% |
 | Affine + RandomErasing | 95.07% |
 
 ---
 
-# 🏆 Final Model Performance
+# 🏆 Final Performance
 
-Best observed result:
+**Best Test Accuracy**
 
-Test Accuracy: 95.30%
+> **95.30%**
 
-Configuration:
+Final configuration:
 
-CNN + BatchNorm + Dropout  
-+  
-AdamW  
-+  
-CosineAnnealingLR  
-+  
-RandomRotation(10°)
+- CNN
+- Batch Normalization
+- Dropout
+- AdamW
+- CosineAnnealingLR
+- RandomRotation (10°)
 
 ---
 
 # 📊 Model Evaluation
 
-The model was evaluated using multiple metrics and visualization techniques.
+The trained model was evaluated using several complementary metrics and visualizations.
 
 Evaluation includes:
 
+- Training & Validation Loss
+- Training & Validation Accuracy
 - Classification Report
-- Precision
-- Recall
-- F1-score
+- Precision / Recall / F1-score
 - Normalized Confusion Matrix
-- Misclassified Samples Analysis
+- Misclassified Samples
+- Error Frequency Analysis
 
-## Losses & Accuracy
+---
+
+## 📉 Training Curves
 
 ![Losses & Accuracy](images/BEST_MODEL_Loss_Accuracy.jpg)
 
-## Classification Report
+---
+
+## 📄 Classification Report
 
 ![Classification Report](images/BEST_MODEL_classification_report_plot.jpg)
 
+---
 
-## Confusion Matrix
+## 📊 Confusion Matrix
 
 ![Confusion Matrix](images/BEST_MODEL_confusion_matrix.jpg)
 
+---
 
-## False Predictions
+## ❌ Misclassified Samples
 
 ![False Predictions](images/BEST_MODEL_False_Prediction.jpg)
 
@@ -272,12 +278,10 @@ Evaluation includes:
 
 # 🔍 Error Analysis
 
-The model errors were analyzed to identify visually similar handwritten characters.
+The most frequent mistakes occur between visually similar handwritten letters.
 
-The most frequent misclassifications:
-
-| True Class | Predicted Class | Count |
-|---|---|---:|
+| True | Predicted | Count |
+|------|-----------|------:|
 | l | i | 101 |
 | i | l | 78 |
 | g | q | 70 |
@@ -287,66 +291,82 @@ The most frequent misclassifications:
 | j | i | 10 |
 | i | j | 9 |
 
-Most errors occur between visually similar characters, which is expected for handwritten character recognition tasks.
+These errors are expected because many handwritten letters share highly similar visual structures.
 
 ---
 
 # 🛠 Technologies
 
-## Programming
+### Programming
 
 - Python
 
-## Deep Learning
+### Deep Learning
 
 - PyTorch
 - TorchVision
 - CNN
 - Batch Normalization
 - Dropout
+- Data Augmentation
 - Learning Rate Scheduling
 
-## Data Processing & Evaluation
+### Data Processing
 
 - NumPy
-- Pandas
 - Matplotlib
+
+### Evaluation
+
 - Scikit-Learn
 
-## Development Tools
+### Development
 
-- Jupyter Notebook
 - VS Code
+- Jupyter Notebook
 - Git
+
+---
+
+# 📌 Key Features of This Project
+
+- Modular project structure
+- Custom PyTorch Dataset
+- Configurable CNN architecture
+- Configurable optimizer and scheduler
+- Easy augmentation pipeline
+- Experiment-friendly design
+- Comprehensive evaluation utilities
+- Misclassification analysis
 
 ---
 
 # 🚀 Future Improvements
 
-Possible improvements:
+Possible future extensions include:
 
-- Transfer Learning approaches
-- ResNet-based architecture
+- ResNet-based models
+- EfficientNet
 - Vision Transformer (ViT)
-- MixUp / CutMix augmentation
+- MixUp / CutMix
 - Label Smoothing
 - Early Stopping
 - Mixed Precision Training
-- Hyperparameter Optimization with Optuna
-- Model deployment using FastAPI and Docker
-- Experiment tracking using MLflow
+- Optuna Hyperparameter Optimization
+- MLflow Experiment Tracking
+- FastAPI Inference API
+- Docker Deployment
 
 ---
 
 # 📫 Contact
 
-## Ziba Hatamian
+**Ziba Hatamian**
 
 GitHub:
 
 https://github.com/zziibbaa
 
-
 ---
 
-⭐ If you find this project useful, consider giving the repository a star!
+⭐ If you found this project useful, consider giving the repository a star.

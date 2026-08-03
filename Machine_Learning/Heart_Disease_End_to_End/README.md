@@ -153,10 +153,10 @@ Linear → 2
 
 # 📈 Model Performance
 
-| Model | Accuracy | Precision | Recall | F1-score | ROC-AUC |
-|-------|---------:|----------:|-------:|---------:|--------:|
+| Model | Accuracy | Precision (Class 1) | Recall (Class 1) | F1-score (Class 1) | ROC-AUC |
+|:---|:---:|:---:|:---:|:---:|:---:|
 | Logistic Regression | 0.70 | 0.62 | **0.93** | 0.74 | **0.90** |
-| Feed Forward Network | **0.80** | **0.83** | 0.71 | **0.77** | 0.89 |
+| Feed-Forward Network (PyTorch) | **0.81** | 0.72 | **0.93** | **0.81** | 0.89 |
 
 ---
 

@@ -35,7 +35,10 @@ comparison, confidence-threshold selection, and error analysis.
   augmentation, YOLO26s, and test-time augmentation (TTA)
 - 🧩 **Error analysis:** false positives, false negatives, confidence
   thresholds, and incomplete annotations
-
+<p align="center">
+  <img src="assets/sample_predictions.png" width="85%" alt="Sample YOLO26s predictions on test images">
+  <br><em>Sample YOLO26s predictions on held-out test images.</em>
+</p>
 ## 📌 Project Workflow
 
 ``` text
@@ -90,6 +93,10 @@ boxes and the test split contained 4,863. Images that had only `head` or
 - Examined class combinations and object-size distribution.
 - Approximately **91% of the original boxes cover less than 5% of the
   image area**, making small-object detection an important
+ <p align="center">
+  <img src="assets/dataset_samples.png" width="85%" alt="Sample YOLO26s predictions on test images">
+  <br><em>Sample YOLO26s predictions on held-out test images.</em>
+ </p>
   characteristic of this dataset.
 - Checked exact duplicates using MD5 and near-duplicates using
   perceptual hashing (pHash).
@@ -174,7 +181,10 @@ Ultralytics training augmentations.
 | `RandomShadow`                 | Default settings                            |         0.2 |
 | `CoarseDropout`                | 1–4 holes; each 5–15% of image height/width |         0.3 |
 | `MotionBlur` or `GaussianBlur` | Blur limit 7, selected through `OneOf`      |         0.2 |
-
+<p align="center">
+  <img src="assets/training_curves.png" width="85%" alt="Sample YOLO26s predictions on test images">
+  <br><em>Sample YOLO26s predictions on held-out test images.</em>
+ </p>
 The YOLO26n experiments were sequential fine-tuning runs: `n_fixed`
 continued from `n_baseline`, and `n_aug` continued from `n_fixed`.
 Therefore, they do not represent independent runs with identical
@@ -223,7 +233,14 @@ separate error-analysis pipeline produced:
 |    TP |  FP |  FN | Precision | Recall |
 |------:|----:|----:|----------:|-------:|
 | 4,734 | 540 | 129 |     0.898 |  0.974 |
-
+<p align="center">
+  <img src="assets/confusion_matrix.png" width="85%" alt="Sample YOLO26s predictions on test images">
+  <br><em>Sample YOLO26s predictions on held-out test images.</em>
+ </p>
+ <p align="center">
+  <img src="assets/pr_curve.png" width="85%" alt="Sample YOLO26s predictions on test images">
+  <br><em>Sample YOLO26s predictions on held-out test images.</em>
+ </p>
 Ultralytics’ reported precision and recall use its own selected
 operating point, so those values differ from the fixed-threshold
 error-analysis values above.
@@ -296,7 +313,10 @@ For a more detailed diagnosis, missed ground-truth boxes were
 re-examined with a second prediction pass at a low confidence threshold.
 This helps distinguish detections that are present but scored too low
 from failures involving localization.
-
+<p align="center">
+  <img src="assets/error_examples.png" width="85%" alt="Sample YOLO26s predictions on test images">
+  <br><em>Sample YOLO26s predictions on held-out test images.</em>
+</p>
 For the YOLO26n + augmentation analysis at `conf=0.25`, using IoU ≥ 0.5
 for this per-object classification:
 

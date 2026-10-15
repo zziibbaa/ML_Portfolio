@@ -36,7 +36,7 @@ comparison, confidence-threshold selection, and error analysis.
 - 🧩 **Error analysis:** false positives, false negatives, confidence
   thresholds, and incomplete annotations
 <p align="center">
-  <img src="assets/dataset_samples.png" width="85%" alt="Sample YOLO26s predictions on test images">
+  <img src="assets/sample_predictions.png" width="85%" alt="Sample YOLO26s predictions on test images">
   <br><em>Sample YOLO26s predictions on held-out test images.</em>
 </p>
 ## 📌 Project Workflow

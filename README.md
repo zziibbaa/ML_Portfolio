@@ -156,7 +156,7 @@ Highlights
 
 📂 Project
 
-> [OpenCV/Diagnosis of drowsiness/](OpenCV/Diagnosis of drowsiness/)
+> [OpenCV/Diagnosis of drowsiness](OpenCV/Diagnosis of drowsiness)
 
 ---
 

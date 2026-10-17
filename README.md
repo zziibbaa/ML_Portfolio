@@ -1,12 +1,15 @@
-# 🚀 End-to-End Machine Learning & Deep Learning Portfolio
+# 🚀 Computer Vision & End-to-End Machine Learning Portfolio
 
-> **Machine Learning • Deep Learning • Computer Vision • NLP • MLOps • Deployment**
+> **Computer Vision • Object Detection • Deep Learning • Machine Learning • MLOps • Deployment**
 
 <p align="center">
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-MachineLearning-orange)
+![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-DeepLearning-red)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-orange)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer_Vision-green)
+![YOLO](https://img.shields.io/badge/Ultralytics-YOLO26-yellow)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-MachineLearning-orange)
 ![FastAPI](https://img.shields.io/badge/FastAPI-REST_API-green)
 ![Docker](https://img.shields.io/badge/Docker-Deployment-blue)
 ![MLflow](https://img.shields.io/badge/MLflow-Experiment_Tracking-purple)
@@ -18,40 +21,41 @@
 
 # ⭐ Portfolio Highlights
 
-This repository showcases my journey toward becoming a Machine Learning Engineer by building complete, reproducible Machine Learning and Deep Learning projects.
+This repository showcases my journey toward becoming a Computer Vision Engineer, built on complete, reproducible Machine Learning and Deep Learning projects.
 
 ### Highlights
 
-- 🤖 **13 End-to-End AI Projects**
-- 🧠 Computer Vision using PyTorch
-- 💬 Natural Language Processing
-- 🚀 FastAPI & Docker Deployment
-- 📊 Experiment Tracking with MLflow
-- 🛠 Modular & Reusable ML Pipelines
-- 📈 Systematic Model Optimization & Error Analysis
+- 🤖 **15 End-to-End AI Projects**, 4 of them in Computer Vision
+- 🦺 Object Detection with Ultralytics YOLO26 (**0.978 mAP@50** on a held-out test set)
+- 🏷 Dataset Quality & Annotation Correction (FiftyOne + CVAT)
+- 🎥 Real-Time Video Processing with OpenCV
+- 🧠 Representation Learning: Siamese Networks & Few-Shot Classification
+- 🚀 FastAPI & Docker Deployment, Experiment Tracking with MLflow
+- 📈 Systematic Model Evaluation & Error Analysis
 
 # 📌 Portfolio Overview
 
 ```text
 📂 ML_Portfolio
 
+├── 👁 Computer Vision
+│   ├── Object Detection (YOLO)
+│   ├── Real-Time Video Processing (OpenCV)
+│   ├── Image Classification (CNN)
+│   └── Few-Shot Learning (Metric Learning)
+│
 ├── 🤖 Machine Learning
 │   ├── Classification
 │   ├── Regression
 │   ├── Clustering
 │   └── Feature Engineering
 │
-├── 🧠 Deep Learning
-│   ├── Feed Forward Networks
-│   ├── Computer Vision (CNN)
-│   └── PyTorch Projects
-│
-├── 💬 Natural Language Processing
-│
 ├── 🚀 Deployment & MLOps
 │   ├── FastAPI
 │   ├── Docker
 │   └── MLflow
+│
+├── 💬 Natural Language Processing
 │
 └── 🗄 SQL Analytics
 ```
@@ -62,14 +66,16 @@ This repository showcases my journey toward becoming a Machine Learning Engineer
 
 | Category | Projects |
 |----------|---------:|
+| 👁 Computer Vision | 4 |
 | 🤖 Machine Learning | 4 |
-| 🧠 Deep Learning | 2 |
+| 🚀 Deployment & MLOps | 2 |
 | 💬 NLP | 2 |
 | 🌀 Clustering | 3 |
-| 🚀 Deployment & MLOps | 2 |
 | 🗄 SQL | 1 |
 
-**Total Independent Projects: 13**
+**Total Independent Projects: 15**
+
+> Some projects appear in more than one category, so the column does not sum to the total.
 
 ---
 
@@ -77,30 +83,88 @@ This repository showcases my journey toward becoming a Machine Learning Engineer
 
 Hi, I'm **Ziba Hatamian**.
 
-Machine Learning Engineer focused on building reproducible AI systems, modular Deep Learning pipelines, and production-ready Machine Learning applications.
+Aspiring Computer Vision Engineer with an M.Sc. in Biotechnology, focused on object detection, reproducible training pipelines, and dataset quality. I build complete projects, from data inspection and annotation correction to evaluation and error analysis.
 
 ---
-# 🏅 Best Project
+
+# 🏅 Best Projects
 
 If you're visiting this portfolio for the first time, I recommend starting with:
 
-🥇 **Heart Disease Prediction (End-to-End MLOps)**
+🥇 **Helmet Detection with YOLO26**
 
-Complete Machine Learning lifecycle:
+An Object Detection project covering leakage-safe data splitting, annotation correction with FiftyOne + CVAT, model comparison, test-time augmentation, and detailed error analysis.
+
+🥈 **Driver Drowsiness Detection**
+
+A real-time OpenCV system that combines Haar Cascade face/eye detection, a CNN eye-state classifier, and temporal logic to warn the driver.
+
+🥉 **Heart Disease Prediction (End-to-End MLOps)**
+
+Complete Machine Learning lifecycle, from raw data to a deployed service:
 
 Data → Training → MLflow → FastAPI → Docker
 
-
-
-🥈 **EMNIST Letters Classification**
-
-A modular Computer Vision pipeline built entirely with PyTorch, featuring extensive experimentation with CNN architectures, optimizers, schedulers, and data augmentation techniques.
-
 # 🏆 Featured Projects
+
+## 🦺 Helmet Detection with YOLO26 (Object Detection)
+
+A single-class Object Detection project that detects safety helmets in construction-site images, with a focus on dataset quality and fair model evaluation.
+
+Highlights
+
+- YOLO26n baseline → fine-tuning → custom augmentation → YOLO26s
+- Leakage-safe train/validation split using MD5 and pHash near-duplicate detection
+- Annotation review and correction with FiftyOne + CVAT (validation boxes: 2,920 → 3,008)
+- Confidence-threshold analysis and Test-Time Augmentation (Weighted Boxes Fusion)
+- Detailed false-positive / false-negative analysis, including incomplete ground truth
+- **0.978 mAP@50 and 0.676 mAP@50–95** on the held-out test set (1,766 images, YOLO26s)
+
+**Technologies**
+
+- Ultralytics YOLO
+- PyTorch
+- FiftyOne
+- CVAT
+- Albumentations
+
+📂 Project
+
+> [Deep_Learning/Object_Detection_Error_Analysis/helmet_detection/](Deep_Learning/Object_Detection_Error_Analysis/helmet_detection/)
+
+---
+
+## 🚗 Driver Drowsiness Detection (Real-Time Computer Vision)
+
+A real-time prototype that detects prolonged eye closure from a webcam feed and triggers an audible and visual warning.
+
+Highlights
+
+- Face and eye detection with OpenCV Haar Cascades
+- CNN eye-state classifier (open / closed) on 24×24 grayscale eye crops
+- Temporal logic: an alarm triggers only when both eyes stay closed for 5 seconds, separating prolonged closure from single-frame errors
+- Audio alarm (Pygame), flashing visual warning, and automatic frame capture
+- Documented limitations and roadmap: facial landmarks (EAR), PERCLOS, head pose, and quantitative evaluation
+
+**Technologies**
+
+- OpenCV
+- TensorFlow / Keras
+- CNN
+- Haar Cascade
+- Pygame
+
+📂 Project
+
+> [OpenCV/Diagnosis of drowsiness/](OpenCV/Diagnosis of drowsiness/)
+
+---
 
 ## ❤️ Heart Disease Prediction (End-to-End MLOps)
 
-A complete Machine Learning project covering the entire workflow:
+A complete Machine Learning project covering the entire workflow, from raw data to a deployed service.
+
+Highlights
 
 - Data preprocessing pipeline
 - Logistic Regression baseline
@@ -124,39 +188,33 @@ A complete Machine Learning project covering the entire workflow:
 
 ---
 
-## 🔤 EMNIST Letters Classification (Computer Vision)
-
-A modular Computer Vision project for handwritten letter recognition.
-
-Highlights
-
-- Custom CNN architecture
-- Modular PyTorch pipeline
-- AdamW optimizer
-- Learning-rate scheduler comparison
-- Data augmentation experiments
-- Comprehensive error analysis
-- **95.30% Test Accuracy**
-
-**Technologies**
-
-- PyTorch
-- TorchVision
-- CNN
-- Computer Vision
-
-📂 Project
-
-> [Deep_Learning/Computer_Vision_EMNIST/](Deep_Learning/Computer_Vision_EMNIST)
-
----
-
 # 🧰 Technical Skills
 
 ## Programming
 
 - Python
 - SQL
+
+## Computer Vision
+
+- Object Detection (Ultralytics YOLO)
+- Image Classification (CNN)
+- Real-Time Video Processing (OpenCV)
+- Classical Detection (Haar Cascades)
+- Few-Shot & Metric Learning (Siamese Networks, Embeddings)
+- Dataset Quality Checks (duplicate and near-duplicate detection, leakage-safe splits)
+- Annotation Review & Correction (FiftyOne, CVAT)
+- Data Augmentation (Albumentations)
+- Model Evaluation, Threshold Analysis & Error Analysis
+- Test-Time Augmentation (Weighted Boxes Fusion)
+
+## Deep Learning
+
+- PyTorch
+- TensorFlow / Keras
+- Convolutional Neural Networks
+- Transfer Learning
+- Feed Forward Neural Networks
 
 ## Machine Learning
 
@@ -168,13 +226,6 @@ Highlights
 - Cross Validation
 - Hyperparameter Optimization
 - Pipelines
-
-## Deep Learning
-
-- PyTorch
-- Feed Forward Neural Networks
-- Convolutional Neural Networks
-- Computer Vision
 
 ## NLP
 
@@ -208,6 +259,17 @@ Highlights
 
 # 📂 Portfolio Projects
 
+## 👁 Computer Vision
+
+| Project | Description |
+|---------|-------------|
+| 🦺 Helmet Detection (YOLO26) | Object Detection |
+| 🚗 Driver Drowsiness Detection | Real-Time OpenCV + CNN |
+| 🧠 Few-Shot Image Recognition | Siamese Network + ResNet50 |
+| 🔤 EMNIST Letters Classification | CNN (PyTorch), 95.30% Test Accuracy |
+
+---
+
 ## 🤖 Machine Learning
 
 | Project | Description |
@@ -219,12 +281,12 @@ Highlights
 
 ---
 
-## 🧠 Deep Learning
+## 🚀 Deployment & MLOps
 
 | Project | Description |
 |---------|-------------|
-| ❤️ Heart Disease Prediction | End-to-End MLOps |
-| 🔤 EMNIST Letters Classification | Computer Vision (CNN) |
+| ❤️ Heart Disease Prediction | PyTorch + MLflow + FastAPI + Docker |
+| 📈 Advertising Sales Prediction | FastAPI + Docker + MLflow |
 
 ---
 
@@ -247,15 +309,6 @@ Highlights
 
 ---
 
-## 🚀 Deployment & MLOps
-
-| Project | Description |
-|---------|-------------|
-| 🚀 Advertising Sales Prediction | FastAPI + Docker + MLflow |
-| ❤️ Heart Disease Prediction | Complete ML Deployment |
-
----
-
 ## 🗄 SQL
 
 | Project | Description |
@@ -268,12 +321,10 @@ Highlights
 
 I'm currently focusing on:
 
-- Computer Vision
-- CNN Optimization
-- Transfer Learning
+- Computer Vision & Object Detection
 - Model Deployment
-- MLOps
-- Experiment Tracking
+- Classical Image Processing with OpenCV
+- Experiment Tracking & MLOps
 
 ---
 
@@ -281,15 +332,15 @@ I'm currently focusing on:
 
 Upcoming projects planned for this portfolio:
 
-- ResNet
-- EfficientNet
-- Vision Transformer (ViT)
-- YOLO
-- U-Net
+- Planned: deploy the Helmet Detection model by exporting it to ONNX and TensorRT, benchmarking latency, serving it with FastAPI, and packaging it with Docker
+- Object tracking on video (ByteTrack)
+- Image segmentation (U-Net) and defect inspection combining OpenCV with deep learning
+- Image retrieval with CLIP embeddings and FAISS
+- Drowsiness detection upgrade: facial landmarks, EAR and PERCLOS
+- EfficientNet and Vision Transformer (ViT)
 - Recommendation Systems
 - Time Series Forecasting
-- LSTM Networks
-- Transformer-based Models
+- LSTM and Transformer-based Models
 
 ---
 
@@ -301,7 +352,7 @@ Rather than collecting isolated notebooks, this repository emphasizes:
 - Reusable code
 - Clean software engineering practices
 - Reproducible experiments
-- Meaningful evaluation
+- Meaningful evaluation and honest reporting of limitations
 - End-to-end Machine Learning workflows
 
 ---

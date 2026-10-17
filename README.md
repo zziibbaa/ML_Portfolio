@@ -130,7 +130,7 @@ Highlights
 
 📂 Project
 
-> [Deep_Learning/Object_Detection_Error_Analysis/helmet_detection/](Deep_Learning/Object_Detection_Error_Analysis/helmet_detection/)
+> [Object Detection Error & Error Analysis__helmet_detection](Deep_Learning/Object_Detection_Error_Analysis/helmet_detection/)
 
 ---
 
